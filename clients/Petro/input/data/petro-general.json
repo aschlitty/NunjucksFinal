@@ -1,0 +1,144 @@
+[
+  {
+    "templateType": "newsletter",
+    "listName": "Dynamic_November_2021",
+    "edition": "",
+    "layout": "",
+    "version": "v1",
+    "lang": "fr",
+    "utmCampaign": "p9p10_november",
+    "preheaderText": "Vos offres de novembre, des façons d'obtenir des points plus rapidement, des cartes-cadeaux électroniques et plus encore.",
+    "previewText": "Vos offres de novembre, des façons d'obtenir des points plus rapidement, des cartes-cadeaux électroniques et plus encore.",
+    "heroAltText": "",
+    "purchaseBy": "December 13, 2021",
+    "validStart": "November 16, 2021",
+    "validEnd": "December 13, 2021",
+    "validUntil": "November 29, 2021",
+    "bonusPoints": "1,000",
+    "offerLink": "TBD1",
+    "NU": [
+    {
+      "type": "titleTop-imageFull"
+    },
+    {
+      "type": "titleTop"
+    },
+    {
+      "type": "titleTop-imageFull"
+    },
+    {
+      "type": "titleTop-imageFull"
+    },
+    {
+      "type": "titleTop-imageFull"
+    },
+    {
+      "type": "titleTop-imageFull"
+    }
+    ],
+    "EMP": [
+      {
+        "type": "",
+        "name": "askingCanadians",
+        "title": "Earn points from the comfort of your own home.",
+        "copy": "Did you know? You can earn thousands of Petro-Points without leaving home or making a purchase.  \n\nSimply join AskingCanadians™and collect at least 800 points for every survey you complete. Your responses will influence products and services offered by your favourite brands. \n\nPlus, join by December 16th, 2021 and collect <strong>2,500 bonus points</strong>4.",
+        "imageAlt": "Asking Canadians",
+        "image": {
+          "width": 251,
+          "height": 29
+        },
+        "buttonName": "JOIN ASKING CANADIANS",
+        "buttonAltText": "JOIN ASKING CANADIANS",
+        "extraCopy": "Suncor Energy has no ownership or involvement in the AskingCanadians Online Panel.",
+        "link": "https://www.askingcanadians.com/wix/p832215602204.aspx?l=9&id=99",
+        "legalCopy": "4 You must click on the link in this email to be eligible for this offer. Offer expires December 16, 2021. 2,500 bonus Petro-Points will be added to Member accounts within 2 weeks of joining AskingCanadians. Limit of 2,500 points per household. Offer only available to new AskingCanadians panelists. Suncor Energy has no ownership or involvement in the AskingCanadians Online Panel and only provides Members with Petro-Points (on behalf of AskingCanadians) should they choose to become a panelist. If a Member decides to become a panelist, please read the AskingCanadians terms and conditions.",
+        "logic": [
+          {
+           "operator": "eq",
+            "field": "AskingCanadians",
+            "value": "N"
+          },
+          {
+            "operator": "eq",
+            "field": "Panel_Members",
+            "value": "N"
+          }
+        ]
+      },
+      {
+        "type": "",
+        "name": "itravel2000",
+        "title": "You can collect points when you travel.",
+        "copy": "At this time of year, there’s one thing every Canadian can be sure of – it’s going to get colder. If you're planning a winter escape this year, book with itravel2000.com, our exclusive travel partner, and earn 10 Petro-Points for every $1 spent on vacations, flights, and hotels4.\n\nYou can also redeem your points to reduce the cost of your next vacation when you book with itravel2000.com.",
+        "imageAlt": "itravel2000.com (&trade;)",
+        "image": {
+          "width": 266,
+          "height": 275
+        },
+        "buttonName": "BROWSE DESTINATIONS",
+        "buttonAltText": "BROWSE DESTINATIONS",
+        "link": "https://www.petro-canada.ca/en/personal/itravel2000-login?utm_medium=email&utm_source=dynamic&utm_campaign=p9p10_november&utm_content=[%eventValue(%'UTM_CONTENT%')%]&utm_term=[%eventValue(%'UTM_TERM%')%]",
+        "legalCopy": "4 Petro-Points cannot be earned on and/or redeemed against any applicable taxes, transportation related fees and service charges. Visit petro-points.com for complete terms and conditions. The itravel2000 logo is a registered trademark of Red Label Vacations Inc.",
+        "logic": [
+          {
+            "operator": "ne",
+            "field": "AskingCanadians",
+            "value": "Y"
+          },
+           {
+            "operator": "ne",
+            "field": "Panel_Members",
+            "value": "Y"
+          }
+        ]
+      }
+    ],
+    "DYK": [
+      {
+        "type": "",
+        "name": "HudsonsBay_N",
+        "title": "Earn 3X the points on lottery games.",
+        "copy": "Here’s an easy way to earn more points faster. Simply link your Petro-Points card to your Hudson’s Bay Rewards card and swipe with every purchase in-store or online to earn 20% more Petro-Points and 20% more Hudson’s Bay Rewards points¥. \n\nThe faster you earn, the sooner you can redeem your points for free stuff like a Hudson’s Bay eGift card.",
+        "imageAlt": "Hudson's Bay Rewards Card",
+        "image": {
+          "width": 135,
+          "height": 210
+        },
+        "buttonName": "LINK NOW",
+        "buttonAltText": "LINK NOW",
+        "extraCopy": "Not a Hudson’s Bay Rewards member? Click here.",
+        "link": "https://www.petro-canada.ca/en/personal/discover-petro-points/hudsons-bay-rewards?utm_medium=email&utm_source=dynamic&utm_campaign=p9p10_november&utm_content=[%eventValue(%'UTM_CONTENT%')%]&utm_term=[%eventValue(%'UTM_TERM%')%]",
+        "legalCopy": "¥ When you register your Petro-Points and Hudson's Bay Rewards memberships at petro-points.com or by calling 1-800-668-0220, and become a joint member, you are eligible to receive an additional 20% more  Petro-Points which will be awarded to you on all purchases made at participating Petro-Canada sites, with the exception of vaping products, tobacco, gift cards, transit tickets, and taxes on non-petroleum purchases, or any other items specified as exclusions from time to time. Registering also makes you eligible to receive an additional 20% more Hudson's Bay Rewards points on all purchases made at participating Hudson's Bay stores and at thebay.com, with the exception of gift cards, taxes on purchases, or any other items specified  as exclusions from time to time. The additional 20% Hudson's Bay Rewards points will be issued every month, and calculated based on the Hudson's Bay Rewards points earned during the month. The 20% More Hudson's Bay Rewards points will be calculated and awarded as 1 additional Rewards point for every 5 points earned. Hudson's Bay, Hudson's Bay Rewards, hbc.com and their associated designs are trademarks of Hudson's Bay Company, used under license. All rights reserved.",
+        "logic": [
+          {
+            "operator": "eq",
+            "field": "HBC_LINKED",
+            "value": "N"
+          }
+        ]
+      },
+      {
+        "type": "",
+        "name": "HudsonsBay_Y",
+        "title": "Earn 3X the points on lottery games.",
+        "copy": "As a linked Hudson’s Bay Rewards member, not only are you earning 20% more Petro-Points on purchases at Petro stations, you’re also earning 20% more Hudson’s Bay Rewards points on purchases at Hudson’s Bay and thebay.com. \n\nAnd the faster you earn Petro-Points, the sooner you can redeem for free stuff like a Hudson’s Bay eGift card – starting at 10,000 points¥.",
+        "imageAlt": "Hudson's Bay eGift Card",
+        "image": {
+          "width": 240,
+          "height": 155
+        },
+        "buttonName": "REDEEM NOW",
+        "buttonAltText": "REDEEM NOW",
+        "link": "https://www.petro-canada.ca/en/personal/discover-petro-points/hudsons-bay-egift-card?utm_medium=email&utm_source=dynamic&utm_campaign=p9p10_november&utm_content=[%eventValue(%'UTM_CONTENT%')%]&utm_term=[%eventValue(%'UTM_TERM%')%]",
+        "legalCopy": "¥ When you register your Petro-Points and Hudson's Bay Rewards memberships at petro-points.com or by calling 1-800-668-0220, and become a joint member, you are eligible to receive an additional 20% more  Petro-Points which will be awarded to you on all purchases made at participating Petro-Canada sites, with the exception of vaping products, tobacco, gift cards, transit tickets, and taxes on non-petroleum purchases, or any other items specified as exclusions from time to time. Registering also makes you eligible to receive an additional 20% more Hudson's Bay Rewards points on all purchases made at participating Hudson's Bay stores and at thebay.com, with the exception of gift cards, taxes on purchases, or any other items specified as exclusions from time to time. The additional 20% Hudson's Bay Rewards points will be issued every month, and calculated based on the Hudson's Bay Rewards points earned during the month. The 20% More Hudson's Bay Rewards points will be calculated and awarded as 1 additional Rewards point for every 5 points earned. Hudson's Bay, Hudson's Bay Rewards, hbc.com and their associated designs are trademarks of Hudson's Bay Company, used under license. All rights reserved.",
+        "logic": [
+          {
+            "operator": "eq",
+            "field": "HBC_LINKED",
+            "value": "Y"
+          }
+        ]
+      }
+    ]
+  }
+]

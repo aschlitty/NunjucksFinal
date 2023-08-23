@@ -1,0 +1,131 @@
+[
+  {
+    "templateType": "adhoc",
+    "listName": "Dynamic_April_2022",
+    "edition": "",
+    "layout": "TR",
+    "version": "v1",
+    "lang": "en",
+    "utmCampaign": "p3p4_may",
+    "preheaderText": "Download the Optimity wellness app for rewards and exclusive&nbsp;offers.", 
+    "previewText": "", 
+    "heroAltText": "",
+    "purchaseBy": "16 mai 2022",
+    "validStart": "19 avril 2022",
+    "validEnd": "24 mai 2022",
+    "validUntil": "23 mai 2022",
+    "bonusPoints": "1 000",
+    "offerLink": "TBD1",
+    "NU": [
+     {
+        "type": "imageTop",
+        "name": "S2A_1 - Pump Up The Points - All Members",
+        "title": "Il y a encore des millions de points à gagner.", 
+        "copy": "Notre plus gros concours à ce jour se poursuit, ce qui signifie qu'il est encore temps pour vous de devenir notre prochain gagnant Plein de points. Continuez d'utiliser votre carte Petro-Points ou RBC®/‡ liée lors de vos achats à Petro-Canada et faites le plein de chances de devenir un millionnaire Petro-Points.", 
+        "extraCopy": "", 
+        "imageAlt": "Concours plein de points",
+        "buttonName": "DÉCOUVREZ-EN PLUS",
+        "buttonAltText": "DÉCOUVREZ-EN PLUS",
+        "link": "https://petro-canada.ca/fr/personnel/a-propos-petro-points/concours-pleinde-ponts-2022?utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]",
+        "legalCopy": "<sup class='sup'>2</sup> Le concours prend fin le 24 mai 2022. Il y a 5 510 prix à gagner. Les prix consistent en 10 prix de 1 000 000 Petro-Points (valeur au détail approx. de 1 000 $), 500 prix de 100 000 Petro-Points (valeur au détail approx. de 100 $) et 5 000 prix de 10 000 Petro-Points (valeur au détail approx. de 10 $). Les prix feront l'objet d'un tirage toutes les deux semaines et à la fin du concours. Aucun achat requis (participation postale permise). Voir le règlement complet à <a href='https://www.petro-canada.ca/fr/personnel/a-propos-petro-points/concours-pleinde-ponts-2022#terms-and-conditions-desregles?utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]' style='color: #eb0000; text-decoration: underline;' name='Legal2_Textlink' target='_blank'>PleinDePoints.ca</a>. Pour gagner un prix, le participant doit répondre correctement à une question réglementaire. Les chances de gagner dépendent du nombre total de participations reçues durant la période du concours.<br class=''/><br class=''/><sup class='sup'>‡</sup> Les achats admissibles faits au moyen d’une carte de crédit ou de débit RBC® liée à un compte Petro-Points sont automatiquement admissibles aux fins de la participation au concours (le cas échéant, il n'est pas nécessaire d'utiliser, de taper ou d'entrer la carte Petro-Points dans l'application pour participer au concours).", 
+        "logic": [
+        ]
+      },
+      {
+        "type": "titleTop-imageTopHalf",
+        "name": "S2B_1 - Propane Promo",
+        "title": "Préparez votre saison des grillades et obtenez le triple des points.", 
+        "copy": "L'été est enfin à nos portes. Préparez-vous à cuisiner en vous amusant avec cette offre spéciale sur le propane. Nous vous donnerons le triple des points lors de l'échange ou de l'achat d'une bouteille de propane à n'importe lequel de nos établissements3 participants.<br class=''/><br class=''/>L'offre prend fin le 8 août 2022.", 
+        "extraCopy": "", 
+        "buttonName": "TROUVER UN ÉTABLISSEMENT",
+        "buttonAltText": "TROUVER UN ÉTABLISSEMENT",
+        "link": "https://www.petro-canada.ca/fr/personnel/trouver-une-station-service?service=PropaneBottleExchange&utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]",
+        "legalCopy": "<sup class='sup'>3</sup> Le triple des points sera accordé entre le 15 mars et le 8 août 2022 à l'échange et (ou) à l'achat d'une bouteille de propane neuve (les bouteilles neuves achetées sont pleines).", 
+        "logic": [
+          {
+             "operator": "ne",
+            "field": "APRIL_DYNAMIC.PROPANE",
+            "value": "N"
+          }
+        ]
+      },
+      {
+        "type": "imageTop",
+        "name": "S2C_1 - Gift Card Contest",
+        "title": "Vous pourriez gagner une carte-cadeau prépayée de 1 000 $.", 
+        "copy": "Voici un moyen facile de vous gâter. Il vous suffit d'acheter une carte Visa ou Mastercard prépayée Vanilla® (50 $ et plus) à l'un de nos établissements. Inscrivez-vous ensuite en ligne à GiftCardPrizes.ca pour courir la chance de gagner une carte prépayée Vanilla® de 1 000 $ et des prix hebdomadaires de 250 $ en cartes prépayées4.", 
+        "extraCopy": "",
+        "imageAlt": "", 
+        "buttonName": "PARTICIPER",
+        "buttonAltText": "PARTICIPER",
+        "link": "https://giftcardprizes.ca/?utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]",
+        "legalCopy": "<sup class='sup'>4</sup> AUCUN ACHAT REQUIS. Prend fin le 23 mai 2022 (23 h 59, HE). Ouvert aux résidents du Canada qui ont atteint l’âge de la majorité. 11 prix, incluant 1 carte prépayée Vanilla® de 1 000 $, valeur au détail approx. de 1 000 $ CA; et 10 cartes prépayées Vanilla® de 250 $, valeur au détail approx. de 250 $ CA ch. Les chances de gagner dépendent du nombre de participations admissibles reçues. Question réglementaire d’arithmétique requise. Visitez <a href='GiftCardPrizes.ca?utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]' style='color: #eb0000; text-decoration: underline;' name='Legal4_Textlink' target='_blank'>GiftCardPrizes.ca</a> pour obtenir des détails sur le règlement, la participation et les prix. La carte prépayée Vanilla Mastercard® est émise par Peoples Trust Company en vertu d'une licence de Mastercard International Incorporated. Mastercard est une marque de commerce déposée et la conception des cercles est une marque de commerce de Mastercard International Incorporated. La carte prépayée Vanilla Visa^ est émise par Peoples Trust Company en vertu d'une licence de Visa Int.", 
+        "logic": [
+          {
+            
+          }
+        ]
+      }
+    ],
+
+    "EMP": [
+      {
+        "type": "",
+        "name": "S3_1 - Chocolate Offer",
+        "title": "Une offre exceptionnelle avec une touche de croquant.", 
+        "copy": "Achetez une boisson chaude de n'importe quel format et obtenez une barre de chocolat Crunchie de CADBURY (44 g) pour 99 ¢ de plus5.", 
+        "image": {
+          "width": 256,
+          "height": 315
+        },
+        "buttonName": "TROUVER UN ÉTABLISSEMENT",
+        "buttonAltText": "TROUVER UN ÉTABLISSEMENT",
+        "extraCopy": "", 
+        "link": "https://www.petro-canada.ca/fr/personnel/trouver-une-station-service?service=ConvenienceStore&utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]",
+        "legalCopy": "<sup class='sup'>5</sup> Offre valide jusqu’au 23 mai 2022. Achetez une boisson chaude de n’importe quel format au prix régulier et obtenez une barre de chocolat Crunchie de CADBURY, 44 g, pour 99 ¢ de plus, taxes applicables en sus. Aux établissements de ventes au détail participants. Jusqu’à épuisement des stocks. Ne peut être jumelée à aucune autre offre. Toutes les marques de commerce appartiennent à leur propriétaire respectif. Demandez les détails ou visitez <a href='https://www.petro-canada.ca/fr/personnel/a-propos-petro-points?utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]' style='color: #eb0000; text-decoration: underline;' name='Legal5_textlink' target='_blank'>petro-points.com</a>.", 
+        "logic": [{           
+          }   
+        ]
+      }
+    ],
+    "DYK": [
+       {
+        "type": "",
+        "name": "S4_1 - Car Wash: Wash & Go ",
+        "title": "Faites le ménage du printemps avec deux lavages gratuits.", 
+        "copy": "Le printemps peut être salissant. Nettoyez votre voiture grâce à notre carte Lavez Partez. Elle est préchargée avec 5 de nos meilleurs lavages. Aucun billet. Aucune expiration.<br class=''/><br class=''/>De plus, en ce moment, lorsque vous achetez et enregistrez ou rechargez votre carte Lavez Partez en ligne, nous vous donnerons 2 lavages en prime et le double des points6.",
+        "imageAlt": "",
+        "image": {
+          "width": 266,
+          "height": 219
+        },
+        "buttonName": "ACHETEZ EN LIGNE DÈS MAINTENANT",
+        "buttonAltText": "ACHETEZ EN LIGNE DÈS MAINTENANT",
+        "extraCopy": "", 
+        "link": "https://www.petro-canada.ca/fr/personnel/mes-petro-points?modalUrl=%2Ffr%2Fpersonnel%2Fmes-petro-points%2Fcommander%2Flavez-partez%2Fetape-1-quantite&utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]#mescartes",
+        "legalCopy": "<sup class='sup'>6</sup> Valide à n’importe quel établissement Petro-CanadaMC avec lave-auto SuperDouxMC ou GlideWashMC. Recevez 2 lavages supplémentaires chargés sur votre carte Lavez Partez et deux fois le nombre habituel de Petro-Points après l'enregistrement ou la recharge d'une carte existante en ligne. Pour enregistrer votre carte, vous devez avoir un compte Petro-Points en ligne. L’offre est valable jusqu’au 13 juin 2022. Veuillez consulter les conditions à <a href='https://www.petro-canada.ca/fr/personnel/conditionss?utm_medium=email&utm_source=dynamic&utm_campaign=p3p4_april&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]#carte-lavez-partez' style='color: #eb0000; text-decoration: underline;' name='Legal6_textlink' target='_blank'>petro-canada.ca/fr/personnel/conditions</a>.", 
+        "logic": [
+          {          
+          }
+        ]
+      }
+
+    ],
+    "sections": [
+      {
+        "layout":"topRight",
+        "name":"",
+        "title":"",
+        "copy":"It's important to do things for ourselves that will help us manage stress and be at our best. The Optimity app can help you be at your best with mindfulness exercises and self-care tips.<br class=''/><br class=''/>That’s not all. Every time you reach a goal, complete a challenge and more, you’ll earn Optimity Gems you can convert into Petro-Points*. This fun and easy app enhances your journey to better overall health. <br class=''/><br class=''/>Plus, when you download the free app and link it to your Petro-Points card, you’ll be automatically entered to win a Spa Getaway package&nbsp;for&nbsp;2^.", 
+        "altText":"itravel2000.com",
+        "extraCopy":"",
+        "button": {
+          "name":"PLAN YOUR VACATION TODAY",
+          "altText":"PLAN YOUR VACATION TODAY",
+          "link":"#0"
+        },
+        "legal":"<sup class='sup'>*</sup> Earn 5000 Bonus Points per booking on vacation packages based on double, triple and quad occupancy. Valid on bookings made between February 24 - March 24, 2022, for departures up to October 31, 2022. <br class=''/><br class=''/>1 Petro-Points cannot be earned on and/or redeemed against any applicable taxes, transportation related fe,es and service charges. Petro-Points cannot be collected against any redemptions, applicable taxes, transportation related fees and service charges. Visit petro-points.com for complete tenns and conditions. <br class=''/><br class=''/>The itravel2000 logo is a registered trademark of Red Label Vacations Inc. <br class=''/><br class=''/>© 2022 Red Label Vacations Inc-© 2022 d.b.a. itrave12QOQ.com, B.C. Reg. #3597, Ont. Reg. #50012834, Quebec pennit holder&nbsp;#703376."
+      }
+    ]
+  }
+]

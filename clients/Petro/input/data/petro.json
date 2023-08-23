@@ -1,0 +1,156 @@
+[
+  {
+    "templateType": "newsletter",
+    "version": "v1",
+    "lang": "en",
+    "listName": "Dynamic_June_2022",
+    "edition": "",
+    "layout": "",
+    "utmCampaign": "p5p6_june",
+    "preheaderText": "Activate your June bonus offer and give back when you buy our best wash.",
+    "previewText": "Activate your June bonus offer and give back when you buy our best wash.",
+    "heroAltText": "",
+    "purchaseBy": "July 18, 2022",
+    "validStart": "June 14, 2022",
+    "validEnd": "July 18, 2022",
+    "validUntil": "June 27, 2022",
+    "bonusPoints": "1,000",
+    "segmentID": "0001",
+    "offerLink": "TBD",
+    "NU": [
+     {
+        "type": "default",
+        "name": "S2A_1_CareMakers",
+        "title": "We’ll donate $5 from every best car wash sold2.",
+        "copy": "From June 17 to 27, when you buy our best car wash tickets online or in-store, we’ll donate $5 from each wash purchased to the Petro-Canada CareMakers FoundationTM. <br><br> CareMakers Foundation champions family caregivers by funding critical support programs and resources. <br><br> The fundraiser ends June 27th, 2022, so buy your car wash tickets today.",
+        "extraCopy": "",
+        "imageAlt": "Petro-Canada CareMakers Foundation&trade; | Turn your car wash into a 'Care Wash' because family caregivers need support too. ",
+        "buttonName": "BUY NOW",
+        "buttonAltText": "BUY NOW",
+        "link": "https://www.petro-canada.ca/en/personal/car-wash?utm_medium=email&utm_source=dynamic&utm_campaign=p5p6_june&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]",
+        "legalCopy": "2 For each Qualifying Purchase made between June 14, 2022 and June 27, 2022, Petro-Canada will donate $5.00 to the Petro-Canada CareMakers FoundationTM. Valid for purchases of regular priced premium car wash tickets (GlideForCarLoversTM or SuperWorksTM) only (“Qualifying Purchase”). Cannot be combined with other offers.",
+        "logic": []
+      },
+      {
+        "type": "default",
+        "name": "S2B_1_RBC",
+        "title": "",
+        "copy": "",
+        "extraCopy": "",
+        "imageAlt": "",
+        "buttonName": "",
+        "buttonAltText": "",
+        "link": "https://www.rbcroyalbank.com/credit-cards/camp/rvc/2022/?&ASC=3a0052&utm_source=Petro_Dynamic_&utm_medium=Petro_Dynamic_EM&utm_campaign=PC_Dynamic_EM_E_May_ROC&utm_content=PetroEM_MC5CB+_25pts_E_May",
+        "legalCopy": "To participate in this offer, you must have an RBC debit or credit card which is issued by Royal Bank of Canada (excluding RBC commercial credit cards) (“RBC Card”). RBC business clients will only be able to link up to two (2) business credit cards and one business debit card to a Petro-Points card. You must be enrolled in RBC Online Banking or RBC Mobile app in order to link your RBC Card to your Petro-Points card. Card linking may take up to 2 business days to process before savings and bonus points can be applied to purchases. A linked RBC card means an RBC Card linked to a Petro-Points Account. Your linked RBC Card acts as your Petro-Points card. You will automatically earn Petro-Points when you pay for qualifying purchases with your linked RBC Card at Petro-Canada locations and you do not need to swipe your Petro-Points card before you pay. You can redeem your Petro-Points at Petro-Canada using your linked RBC Card. Each time you use your linked RBC Card to purchase any grade of gasoline, or diesel, at a Petro-Canada location, you will save three cents ($0.03) per litre at the time of the transaction. Each time you use your linked RBC Card to pay for Petro-Points purchases at a Petro-Canada location, you will earn a bonus of twenty percent (20%) more Petro-Points than you would normally earn, in accordance with the Petro-Points terms and conditions available at petro-points.com/terms. Petro-Points are not awarded on tobacco products, vaping products, gift cards, transit tickets and taxes on non-petroleum purchases. Only certain RBC cards earn RBC Rewards points. Each time you use your linked RBC Card that earns RBC Rewards points to pay for purchases at a Petro-Canada location, you will earn a bonus of twenty percent (20%) more RBC Rewards points than you would normally earn for every $1 in purchases in accordance with the RBC Rewards Terms and Conditions at rbcrewards.com/#!/terms-and-conditions. Please allow up to ninety (90) days from the date the transaction is posted on your credit card statement for the bonus points to be deposited into RBC Rewards account.<br><br>® Royal Bank of Canada, RBC and Royal Bank are registered trademarks of Royal Bank of Canada. Used under licence. All other trademarks are the property of their respective owner(s).",
+        "logic": [
+          {
+            "field": "PROV",
+            "operator": "eq",
+            "value": "ROC"
+          },
+          {
+            "field": "RBC_Linked",
+            "operator": "eq",
+            "value": "N"
+          },
+          {
+            "field": "RBC_SWIPED",
+            "operator": "eq",
+            "value": "N"
+          }
+        ]
+      },
+      {
+        "type": "default",
+        "name": "S2B_2_RBC",
+        "title": "",
+        "copy": "",
+        "extraCopy": "",
+        "imageAlt": "",
+        "buttonName": "",
+        "buttonAltText": "",
+        "link": "https://www.rbcroyalbank.com/credit-cards/camp/rvc/2023/?ASC=5B0009&utm_source=Petro_Dynamic&utm_medium=Petro_Dynamic_EM&utm_campaign=PC_Dynamic_EM_E_May_QR&utm_content=PetroEM_+_35pts_E_May",
+        "legalCopy": "To participate in this offer, you must have an RBC debit or credit card which is issued by Royal Bank of Canada (excluding RBC commercial credit cards) (“RBC Card”). RBC business clients will only be able to link up to two (2) business credit cards and one business debit card to a Petro-Points card. You must be enrolled in RBC Online Banking or RBC Mobile app in order to link your RBC Card to your Petro-Points card. Card linking may take up to 2 business days to process before savings and bonus points can be applied to purchases. A linked RBC card means an RBC Card linked to a Petro-Points Account. Your linked RBC Card acts as your Petro-Points card. You will automatically earn Petro-Points when you pay for qualifying purchases with your linked RBC Card at Petro-Canada locations and you do not need to swipe your Petro-Points card before you pay. You can redeem your Petro-Points at Petro-Canada using your linked RBC Card. Each time you use your linked RBC Card to purchase any grade of gasoline, or diesel, at a Petro-Canada location, you will save three cents ($0.03) per litre at the time of the transaction. Each time you use your linked RBC Card to pay for Petro-Points purchases at a Petro-Canada location, you will earn a bonus of twenty percent (20%) more Petro-Points than you would normally earn, in accordance with the Petro-Points terms and conditions available at petro-points.com/terms. Petro-Points are not awarded on tobacco products, vaping products, gift cards, transit tickets and taxes on non-petroleum purchases. Only certain RBC cards earn RBC Rewards points. Each time you use your linked RBC Card that earns RBC Rewards points to pay for purchases at a Petro-Canada location, you will earn a bonus of twenty percent (20%) more RBC Rewards points than you would normally earn for every $1 in purchases in accordance with the RBC Rewards Terms and Conditions at rbcrewards.com/#!/terms-and-conditions. Please allow up to ninety (90) days from the date the transaction is posted on your credit card statement for the bonus points to be deposited into RBC Rewards account.<br><br>® Royal Bank of Canada, RBC and Royal Bank are registered trademarks of Royal Bank of Canada. Used under licence. All other trademarks are the property of their respective owner(s).",
+        "logic": [
+          {
+            "field": "PROV",
+            "operator": "eq",
+            "value": "QC"
+          },
+          {
+            "field": "RBC_Linked",
+            "operator": "eq",
+            "value": "N"
+          },
+          {
+            "field": "RBC_SWIPED",
+            "operator": "eq",
+            "value": "N"
+          }
+        ]
+      },
+      {
+        "type": "default",
+        "name": "S2B_3_RBC",
+        "title": "",
+        "copy": "",
+        "extraCopy": "",
+        "imageAlt": "",
+        "buttonName": "",
+        "buttonAltText": "",
+        "link": "https://www.rbcroyalbank.com/petro-canada/index.html#link",
+        "legalCopy": "To participate in this offer, you must have an RBC debit or credit card which is issued by Royal Bank of Canada (excluding RBC commercial credit cards) (“RBC Card”). RBC business clients will only be able to link up to two (2) business credit cards and one business debit card to a Petro-Points card. You must be enrolled in RBC Online Banking or RBC Mobile app in order to link your RBC Card to your Petro-Points card. Card linking may take up to 2 business days to process before savings and bonus points can be applied to purchases. A linked RBC card means an RBC Card linked to a Petro-Points Account. Your linked RBC Card acts as your Petro-Points card. You will automatically earn Petro-Points when you pay for qualifying purchases with your linked RBC Card at Petro-Canada locations and you do not need to swipe your Petro-Points card before you pay. You can redeem your Petro-Points at Petro-Canada using your linked RBC Card. Each time you use your linked RBC Card to purchase any grade of gasoline, or diesel, at a Petro-Canada location, you will save three cents ($0.03) per litre at the time of the transaction. Each time you use your linked RBC Card to pay for Petro-Points purchases at a Petro-Canada location, you will earn a bonus of twenty percent (20%) more Petro-Points than you would normally earn, in accordance with the Petro-Points terms and conditions available at petro-points.com/terms. Petro-Points are not awarded on tobacco products, vaping products, gift cards, transit tickets and taxes on non-petroleum purchases. Only certain RBC cards earn RBC Rewards points. Each time you use your linked RBC Card that earns RBC Rewards points to pay for purchases at a Petro-Canada location, you will earn a bonus of twenty percent (20%) more RBC Rewards points than you would normally earn for every $1 in purchases in accordance with the RBC Rewards Terms and Conditions at rbcrewards.com/#!/terms-and-conditions. Please allow up to ninety (90) days from the date the transaction is posted on your credit card statement for the bonus points to be deposited into RBC Rewards account.<br><br>® Royal Bank of Canada, RBC and Royal Bank are registered trademarks of Royal Bank of Canada. Used under licence. All other trademarks are the property of their respective owner(s).",
+        "logic": [
+          {
+            "field": "RBC_Linked",
+            "operator": "eq",
+            "value": "Y"
+          },
+          {
+            "field": "RBC_SWIPED",
+            "operator": "eq",
+            "value": "Y"
+          }
+        ]
+      }      
+    ],
+    "EMP": [
+      {
+        "type": "",
+        "name": "HBC",
+        "title": "Use your points to get free Father’s Day gift. ",
+        "copy": "Did you know? You can redeem your Petro-Points for a Bay eGift card4. Starting at only 10,000 points for a $10 eGift card, it’s a great gift for Father’s Day. And the best part is, Dad doesn’t need to know you got it for free. <br><br>Redeem your points online or in the Petro-Canada app today and the eGift card will be emailed to you immediately.",
+        "imageAlt": "",
+        "image": {
+          "width": 266,
+          "height": 294
+        },
+        "buttonName": "REDEEM ONLINE NOW",
+        "buttonAltText": "REDEEM ONLINE NOW",
+        "extraCopy": "",
+        "link": "https://www.petro-canada.ca/en/personal/my-petro-points/redeem/egift-cards?home&modalUrl=%2Fen%2Fpersonal%2Fmy-petro-points%2Fredeem%2Fhudsons-bay-egift-card&utm_medium=email&utm_source=dynamic&utm_campaign=p5p6_june&utm_content=[%eventValue('UTM_CONTENT')%]&utm_term=[%eventValue('UTM_TERM')%]",
+        "legalCopy": "4 The Bay eGift cards are redeemable towards merchandise only, online at thebay.com or at any Hudson’s Bay store. The Bay eGift cards must be printed in order to be used for payment in-store. The Bay eGift cards are not refundable.  For full terms and conditions, visit: petro-canada.ca/en/personal/terms-conditions#hudsons-bay-rewards that will bring you to the Bay eGift Card section on this page.<br><br>Hudson’s Bay, thebay.com and their associated designs are trademarks of Hudson’s Bay Company, used under license. All rights reserved.",
+        "logic": []
+      }
+    ],
+    "DYK": [
+      {
+        "type": "",
+        "name": "App",
+        "title": "Summer sizzles with 3X points on propane.",
+        "copy": "We know you’ve got places to go and people to see. With the Petro-Canada app, you can fill up faster and get back to doing more of what fuels you. Simply login, tap the red arrow, select fuel up and follow the 3P’s: <br>V <br> Pick the pump that matches with your fuel station <br>V <br> Pay using your digital wallet to  pre-authorize your purchase <br>V <br> Pump until you hear the hose click, return and go!",
+        "imageAlt": "3X Petro-Points | Triple your Petro-Points.",
+        "image": {
+          "width": 148,
+          "height": 308
+        },
+        "buttonName": "",
+        "buttonAltText": "",
+        "extraCopy": "",
+        "link": "",
+        "legalCopy": "",
+        "logic": []
+      }
+    ]
+  }
+]
