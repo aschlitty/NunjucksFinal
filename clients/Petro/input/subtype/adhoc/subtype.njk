@@ -1,0 +1,230 @@
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: #FCFCFC;" role="presentation">
+  <tr>
+    <td align="center">
+      <!--=== PREHEADER SECTION === -->
+      <table cellspacing="0" cellpadding="0" border="0" width="600" class="w100m" align="center" style="width:600px;background-color: #ffffff;" role="presentation">
+        <tr>
+          <td align="center" valign="top" style="padding: 15px 15px 10px 15px; background-color: #ffffff;">
+            <table border="0" cellspacing="0" cellpadding="0" align="left" class="w100m" valign="middle" width="100%" role="presentation">
+              <tr>
+                <td valign="middle" class="expandm2">
+                  <table width="410" border="0" cellspacing="0" cellpadding="0" align="left" class="w100m" style="width:410px;" role="presentation">
+                    <tr>
+                      <td align="left" valign="center" style="font-family:Arial, sans-serif; font-size:12px; line-height:16px; color:#000000;" class="centerm">
+                        {{ preheaderText }}<br class=""/><br class=""/>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" align="center" class="expandm2">
+                  <table width="160" border="0" cellspacing="0" cellpadding="0" align="right" class="w100m" style="width:160px;" role="presentation">
+                    <tr>
+                      <td valign="top">
+                        <table width="160" border="0" cellspacing="0" cellpadding="0" align="center" style="width:160px;" role="presentation">
+                          <tr>
+                            <td valign="top" class="centerm" align="center" style="font-family:Arial, sans-serif; font-size:12px; color:#000000; text-align: right;">
+                              {% if lang == 'fr' %}
+                                Voir <a href="#0" target="_blank" style="text-decoration:underline; color:#eb0000;" name="online">en ligne</a> | <a href="https://www.petro-canada.ca/fr/personnel/mes-petro-points?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" style="text-decoration:underline; color:#eb0000;" name="My Account">Mon compte</a>
+                              {% else %}
+                                View <a expr:href="LINK(0)" target="_blank" style="text-decoration:underline; color:#eb0000;" name="online">online</a> | <a href="https://www.petro-canada.ca/en/personal/my-petro-points?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" style="text-decoration:underline; color:#eb0000;" name="">My Account</a>
+                              {% endif %}
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 15px 20px 15px; background-color: #ffffff;">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+              <tr>
+                <td>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+                    <tr>
+                      <td height="1" style="line-height: 1px; border-top: 2px #c4c4c4 solid;" width="100%" class="">
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td align="center" width="100" style="width:100px;">
+                  {% if lang == 'fr' %}
+                    <img src="https://email.petro-canada.ca/images/SMC/Logos/puck_fr.png" alt="Petro&nbsp;Canada(MC)" style="color: #000000; font-family: arial; font-size: 14px; display: block;" />
+                  {% else %}
+                    <img src="https://email.petro-canada.ca/images/SMC/Logos/puck.png" alt="Petro&nbsp;Canada&trade;" style="color: #000000; font-family: arial; font-size: 14px; display: block;" />
+                  {% endif %}
+                </td>
+                <td>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+                    <tr>
+                      <td height="1" style="line-height: 1px; border-top: 2px #c4c4c4 solid;" width="100%" class="">
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="right" style="font-family: arial; font-weight: bold; font-size: 16px; padding: 0px 15px 10px 15px;" class="centerm">
+            [%eventValue('CURR_PTS_BAL')%]
+          </td>
+        </tr>
+      </table>
+      <!--=== //PREHEADER SECTION === -->
+      <!-- BODY SECTION -->
+      <table cellspacing="0" cellpadding="0" border="0" width="600" class="w100m" align="center" style="width:600px;background-color: #ffffff;" role="presentation">
+        <tr>
+          <td style="font-family: arial; font-size: 16px; line-height: 20px; color: #000000; padding:0px 20px 20px 20px;">
+            <img class="expandm" src="./images/header{{ '_fr' if lang =='fr' }}.png" style="display: block; font-size: 30px; font-family: arial; font-weight: bold; line-height: 32px;" alt="" class="expandm">
+          </td>
+        </tr>
+        <tr>
+          <td class="" style="font-family: arial; font-size: 16px; line-height: 20px; color: #000000; padding:0px 20px 20px 20px;">
+            <h1 style="margin: 0px; font-size: 28px; line-height: 34px;" >{{ headerText }}</h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="" class="">
+            {%- from "../../macros/standard.njk" import m_copy %}
+            {% for section in sections %}
+              {{ m_copy(section, lang) }}
+            {% endfor %}
+          </td>
+        </tr>
+      </table>
+      <!-- /BODY SECTION -->
+      <!--FOOTER SECTION -->
+      <table cellspacing="0" cellpadding="0" border="0" width="600" align="center" class="w100m" style="width:600px;background-color: #000000" role="presentation">
+        <tr>
+          <td>
+            <!--FOOTER SECTION -->
+            <table cellspacing="0" cellpadding="0" border="0" width="600" class="w100m" align="center" style="width:600px;background-color: #FCFCFC;" role="presentation">
+              <tr>
+                <td>
+                  {% if lang == 'fr' %}
+                    <a href="https://www.petro-canada.ca/fr/a-propos-petro-canada/fierement-dici?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" style="text-decoration: none;" target="_blank" name="LIVE BY THE LEAF_canopy">
+                      <img src="https://email.petro-canada.ca/images/SMC/Logos/footer_fr.png" border="0" align="center" style="display:block; font-family: arial; font-weight: bold; font-size: 16px; max-width: 600px; border: 0px; color: #000000;" class="hide" alt="FI&Eacute;REMENT&nbsp;D'ICI(MC)">
+                      <!--[if !mso]><!-- -->
+                      <img src="https://email.petro-canada.ca/images/SMC/Logos/footer_mb_fr.png" border="0" align="center" style="display:none; font-family: arial; font-weight: bold; font-size: 16px; border: 0px; color: #000000;" class="expandm2" alt="FI&Eacute;REMENT&nbsp;D'ICI(MC)" width="100%">
+                      <!--<![endif]-->
+                    </a>
+                  {% else %}
+                    <a href="https://www.livebytheleaf.ca/?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" style="text-decoration: none;" target="_blank" name="LIVE BY THE LEAF_canopy">
+                      <img src="https://email.petro-canada.ca/images/SMC/Logos/footer.png" border="0" align="center" style="display:block; font-family: arial; font-weight: bold; font-size: 16px; max-width: 600px; border: 0px; color: #000000;" class="hide" alt="LIVE BY THE LEAF&trade;">
+                      <!--[if !mso]><!-- -->
+                      <img src="https://email.petro-canada.ca/images/SMC/Logos/footer_mb.png" border="0" align="center" style="display:none; font-family: arial; font-weight: bold; font-size: 16px; border: 0px; color: #000000;" class="expandm2" alt="LIVE BY THE LEAF&trade;" width="100%">
+                      <!--<![endif]-->
+                    </a>
+                  {% endif %}
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0" border="0" width="600" class="w100m" align="center" style="width:600px;background-color: #FCFCFC;" role="presentation">
+        <!-- /FOOTER SECTION -->
+        <!-- LEGAL SECTION -->
+        <tr>
+          <td valign="top" style="padding: 0px 20px; background-color: #FCFCFC;">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+              <tbody>
+                <tr>
+                  <td style="text-align: left; padding: 10px 0px 20px 0px; font-family: Arial, sans-serif; font-size: 12px; line-height: 15px; color: #000000;" align="left" class="legal">
+                    <p style="margin: 0px;">
+                      {% if lang == 'fr' %}
+                        <span style="font-style:italic;">Une entreprise de Suncor.</span>
+                        <br/><sup class="sup">MC</sup> Petro&zwj;-&zwj;Points, le logo Petro&zwj;-&zwj;Points, le logo Petro&zwj;-&zwj;Canada, Transcanadienne&nbsp;&eacute;lectrique et FI&Eacute;REMENT&nbsp;D'ICI sont des marque de commerce de Suncor&nbsp;&Eacute;nergie&nbsp;Inc. Utilis&eacute;e sous&nbsp;licence.
+                        <br /><br />
+                        Afin d'assurer la livraison des courriels de Petro&zwj;-&zwj;Points dans votre bo&icirc;te de r&eacute;ception, ajoutez <a href="mailto:Petro-Points@petro-canada.ca" target="_blank" style="text-decoration:underline; color:#eb0000; white-space:nowrap;" name="Adh&eacute;rez au programme Petro&zwj;-&zwj;Points">Petro&zwj;-&zwj;Points@petro&zwj;-&zwj;canada.ca</a> &agrave; votre carnet d'adresses et &agrave; votre liste d'exp&eacute;diteurs s&ucirc;rs. Est&zwj;-&zwj;ce que quelqu'un vous a transf&eacute;r&eacute; ce courriel? H&acirc;tez&zwj;-&zwj;vous. <a href="https://www.petro-canada.ca/fr/personnel/inscription-petro-points-activer" target="_blank" style="text-decoration:underline; color:#eb0000; white-space:nowrap;" name="Adh&eacute;rez au programme Petro&zwj;-&zwj;Points">Adh&eacute;rez au programme Petro&zwj;-&zwj;Points</a>.
+                      {% else %}
+                        <span style="font-style:italic;">A Suncor business.</span>
+                        <br/> &trade; Petro&zwj;-&zwj;Points, the Petro&zwj;-&zwj;Points logo, the Petro&zwj;-&zwj;Canada logo, Petro&zwj;-&zwj;Canada's Electric&nbsp;Highway and LIVE&nbsp;BY&nbsp;THE&nbsp;LEAF are all trademarks of Suncor&nbsp;Energy&nbsp;Inc. Used under&nbsp;licence.
+                        <br /><br />
+                        To ensure the delivery of <span style="white-space:nowrap;">Petro&zwj;-&zwj;Points</span> emails to your inbox, add <a href="mailto:Petro-Points@petro-canada.ca" style="text-decoration:underline; color:#EB0000; white-space:nowrap;">Petro&zwj;-&zwj;Points@petro&zwj;-&zwj;canada.ca</a> to your address book or safe sender list. Did someone forward this to you? Don't miss out. <a href="https://www.petro-canada.ca/en/personal/petro-points-sign-up-activate?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" style="text-decoration:underline; color:#EB0000; white-space:nowrap;" name="Join Petro&zwj;-&zwj;Points">Join Petro&zwj;-&zwj;Points</a>.
+                      {% endif %}
+                      <br /><br />
+                      [%eventValue('LEGAL_NOTE')%] {{ legalText }}
+                      <br /><br />
+                      {% if lang == 'fr' -%}
+                        &copy; 2021 Suncor&nbsp;&Eacute;nergie&nbsp;Inc.
+                      {% else -%}
+                        &copy; 2021 Suncor&nbsp;Energy&nbsp;Inc.
+                      {% endif -%}
+                      <br /><br />
+                      Petro&zwj;-&zwj;Points - PO Box 59257 Westwood Mall, Mississauga, Ontario, L&zwj;4&zwj;T&nbsp;4&zwj;J&zwj;1,&nbsp;Canada | <a href="tel:18006680220" style="text-decoration:none; color:#000000; white-space:nowrap;">1&nbsp;800&nbsp;668&zwj;-&zwj;0220</a>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <!--/LEGAL SECTION -->
+        <!--SOCIAL SECTION -->
+        <tr>
+          <td style="padding-left:10px; padding-right:10px; background-color: #FCFCFC;" align="center">
+            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
+              <tr>
+                <!-- fb, twit, yt, pump, mob, app -->
+                <td style="padding-right: 2px;">
+                  <a href="https://www.facebook.com/petrocanada?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Facebook_visit"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_fb.png" alt="Facebook" style="color: #507bbc; font-family: arial; font-size: 12px;" border="0" /></a>
+                </td>
+                <td style="padding: 0px 2px;">
+                  <a href="https://www.instagram.com/petrocanada/?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Instagram_visit"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_inst.png" alt="Instagram" style="color: #000000; font-family: arial; font-size: 12px;" border="0" /></a>
+                </td>
+                <td style="padding: 0px 2px;">
+                  <a href="https://twitter.com/petrocanada?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Twitter_visit"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_twit.png" alt="Twitter" style="color: #63caed; font-family: arial; font-size: 12px;" border="0" /></a>
+                </td>
+                <td style="padding: 0px 2px;">
+                  <a href="https://www.youtube.com/petrocanada?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Youtube_visit"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_yt.png" alt="Youtube" style="color: #EB0000; font-family: arial; font-size: 12px;"  border="0" /></a>
+                </td>
+                {% if lang == 'fr' %}
+                  <td style="padding: 0px 2px;">
+                    <a href="https://www.pleinsgaz.ca/?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Pump Talk"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_pump.png" alt="Pumptalk" style="color: #eb183b; font-family: arial; font-size: 12px;" border="0" /></a>
+                  </td>
+                  <td style="padding: 0px 2px;">
+                    <a href="https://www.petro-canada.ca/fr/personnel/petro-canada-app?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Mobile app download"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_mob.png" alt="Mobile" style="color: #eb183b; font-family: arial; font-size: 12px;" border="0" /></a>
+                  </td>
+                {% else %}
+                  <td style="padding: 0px 2px;">
+                    <a href="https://www.pumptalk.ca/?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Pump Talk"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_pump.png" alt="Pumptalk" style="color: #EB0000; font-family: arial; font-size: 12px;" border="0" /></a>
+                  </td>
+                  <td style="padding: 0px 2px;">
+                    <a href="https://www.petro-canada.ca/en/personal/petro-canada-app?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" target="_blank" name="Mobile app download"><img src="https://email.petro-canada.ca/images/SMC/Icons/social_mob.png" alt="Mobile" style="color: #EB0000; font-family: arial; font-size: 12px;" border="0" /></a>
+                  </td>
+                {% endif %}
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 10px 20px 10px; background-color: #FCFCFC;" align="center">
+            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
+              <tr>
+                <td align="center" style="font-family: Arial, sans-serif; font-size: 12px; line-height: 15px; color: #eb0000;">
+                  <p style="margin: 0px;">
+                    {% if lang == 'fr' %}
+                      <a href="https://www.petro-canada.ca/fr/avis-juridiques?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]#protection-des-renseignements-personnels" style="text-decoration:underline; color:#eb0000; white-space:nowrap;" name="Privacy Policy" target="_blank">Renseignements personnels</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.info-petrocanada.ca/unsubscribe4/index.php?lang=fr&email=##email##&cn=##mailingid##" style="text-decoration:underline; color:#eb0000; white-space:nowrap;" name="Unsubscribe" target="_blank">Se d&eacute;sinscrire</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a class="expandm2" href="https://www.petro-canada.ca/fr/personnel/communiquer-avec-le-service-a-la-clientele/envoyez-nous-un-message?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" style="text-decoration:underline; color:#eb0000; white-space:nowrap;" name="Contact Us" target="_blank">Contactez&zwj;-&zwj;nous</a>
+                    {% else %}
+                      <a href="https://www.petro-canada.ca/en/legal-privacy?utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]#privacy" style="text-decoration:underline; color:#EB0000; white-space:nowrap;" name="Privacy Policy" target="_blank">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.info-petrocanada.ca/unsubscribe4/index.php?lang=en&email=##email##&cn=##mailingid##" style="text-decoration:underline; color:#EB0000; white-space:nowrap;" name="Unsubscribe" target="_blank">Unsubscribe</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.petro-canada.ca/en/personal/contact-customer-service?modalUrl=%2Fen%2Fpersonal%2Fcontact-customer-service%2Fsend-us-a-message&utm_medium=email&utm_source=solo&utm_campaign=[%eventValue('UTM_CONTENT')%]&utm_content=[%eventValue(UTM_CONTENT)%]&utm_term=[%eventValue(UTM_TERM)%]" style="text-decoration:underline; color:#EB0000; white-space:nowrap;" name="Contact Us" target="_blank">Contact Us</a>
+                    {% endif %}
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--/SOCIAL SECTION-->
+      </table>
+    </td>
+  </tr>
+</table>
