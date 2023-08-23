@@ -1,0 +1,30 @@
+{%- import "./_genericModules.njk" as _genericModules with context -%}
+{% set standardPadding = 'padding: '+largeSpace+'px '+mediumSpace+'px 0px '+mediumSpace+'px ' %}
+
+{% macro Text(text) %}
+<!-- Copy --> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+    <td align="center" style="padding-top: {{ largeSpace }}px;" class="pt{{ mediumSpace }}">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+        <tr>
+          <td width="{{ innerWidth / 2 }}" valign="top" style="text-align: left;font-family: calibri, arial, sans-serif; font-size: 16px; line-height: 1.2em; color: {{ colors.primaryTextColor }}; padding-right: {{ mediumSpace }}px;" class="p0 expand">
+            {{ text.leftCopy | default("Left Text Here", true) }}
+          </td>
+          <td width="{{ innerWidth / 2 }}" valign="top" style="text-align: left;font-family: calibri, arial, sans-serif; font-size: 16px; line-height: 1.2em; color: {{ colors.primaryTextColor }}; padding-left: {{ mediumSpace }}px; padding-right: {{ mediumSpace }}px;" class="pl0 pt20 pr0 expand">
+            {{ text.rightCopy | default("Right Text Here", true) }}
+          </td>
+          <td width="{{ innerWidth / 2 }}" valign="top" style="text-align: left;font-family: calibri, arial, sans-serif; font-size: 16px; line-height: 1.2em; color: {{ colors.primaryTextColor }}; padding-right: {{ mediumSpace }}px;" class="pt20 pr0 expand">
+            {{ text.rightCopy | default("Right Text Here", true) }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table> 
+<!-- /Copy -->
+{% endmacro %}
+
+
+
+

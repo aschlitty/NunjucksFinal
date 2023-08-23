@@ -1,0 +1,89 @@
+{%- import "./_genericModules.njk" as _genericModules with context -%}
+{%- set standardPadding = 'padding: '+largeSpace+'px '+mediumSpace+'px 0px '+mediumSpace+'px ' -%}
+
+{% macro Preheader(preheader) %}
+<!-- Preheader -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+    <td align="center" style="padding-top: {{ mediumSpace }}px;" class="pt{{ mediumSpace }}">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+        <tr>
+          <td style="text-align: left; font-family: calibri, arial, sans-serif; font-size: 16px; line-height: 1.2em; color: {{ colors.primaryTextColor }};" class="{{- 'tac' if preheader.viewOnline.visible != true or preheader.viewOnline.stackOnMobile == true -}}{{- ' expand' if preheader.viewOnline.stackOnMobile == true -}}">
+            {{ preheader.copy }}
+          </td>
+
+          {%- if preheader.viewOnline.visible == true %}
+          <td style="text-align: right; font-family: calibri, arial, sans-serif; font-size: 16px; line-height: 1.2em; color: {{ colors.primaryTextColor }};" class="{{- 'tac expand pt'+smallSpace if preheader.viewOnline.stackOnMobile == true -}}">
+            <a href="{{ preheader.viewOnline.link }}" target="_blank" style="color: {{ colors.primaryTextColor }}; text-decoration: {{ preheader.viewOnline.styling | default('underline') }};">View Online</a>
+          </td>
+          {%- endif -%}
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>  
+<!-- /Preheader -->
+{% endmacro %}
+
+{% macro Hero(module, index) %}
+
+{%- set width = innerWidth -%}
+
+{% if module.flair %}
+  {% if 'fullWidth' in module.flair -%}
+    {% set width = spacing.width %}
+  {% endif %}
+{% endif %}
+
+{%- set paddingTop = largeSpace -%}
+{# if previous module was Preheader #}
+{%- if modules[index-1].moduleID == 'Preheader' -%}
+  {%- set paddingTop = mediumSpace -%}
+{%- endif %}
+<!-- Hero -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+    <td align="center" style="padding-top: {{ paddingTop }}px;" class="pt{{ mediumSpace }}">
+      {%- if 'roundedTop' in module.flair -%}
+      {{- _genericModules.OutlookRoundedTop(largeSpace, colors.templateBgColor) -}}
+      {%- endif %}
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">                  
+        <tr>
+          <td align="center" style="{{- _genericModules.RoundedTopCSS(largeSpace) if 'roundedTop' in module.flair -}}{{- _genericModules.RoundedBottomCSS(largeSpace) if 'roundedBottom' in module.flair -}}">
+            <a href="{{ module.link }}" target="_blank" style="color: black; text-decoration: none;">
+              <img src="http://via.placeholder.com/{{ width }}x200?text={{ module.alt }}" class="resize" width="{{ width }}" alt="{{ module.alt }}" style="display: block; border: 0;"/>
+            </a>
+          </td>
+        </tr>
+      </table> 
+      {%- if 'roundedBottom' in module.flair -%}
+      {{- _genericModules.OutlookRoundedBottom(largeSpace, colors.templateBgColor) -}}
+      {%- endif %}
+    </td>
+  </tr>
+</table>
+<!-- /Hero -->
+{% endmacro %}
+
+{% macro Text(text) %}
+<!-- Copy -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+    <td align="center" style="padding-top: {{ largeSpace }}px;" class="pt{{ mediumSpace }}">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">   
+        <tr>
+          <td valign="top" style="text-align: left;font-family: calibri, arial, sans-serif; font-size: 16px; line-height: 1.2em; color: {{ colors.primaryTextColor }};">
+            {{ text.copy | default("Body Text Here", true) }}
+          </td>
+        </tr>
+      </table> 
+    </td>
+  </tr>
+</table>   
+<!-- /Copy -->
+{% endmacro %}
+
+
+
+
+

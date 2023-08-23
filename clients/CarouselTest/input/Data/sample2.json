@@ -1,0 +1,186 @@
+[
+   {
+      "templateType": "perfect",
+      "experimentalSupport": false,
+      "lang":"en",
+      "spacing": {
+        "width": "640",
+        "gutters": "40"
+      },
+      "colors": {
+        "bodyBgColor": "#222222",
+        "templateBgColor": "#444444",
+        "primaryTextColor": "#ffffff"
+      },
+      "emailName":"Perfect Email",
+      "page": {
+        "title": "💯 Perfect Email",
+        "preview": "💯 Perfect Email",
+        "flair":["roundedTop", "roundedBottom"]
+      },
+      "modules": [
+        {
+          "columnLayout": "Single",
+          "moduleID": "Preheader",
+          "layout": "left",
+          "copy": "Perfect preheader",
+          "viewOnline": {
+            "visible": true,
+            "stackOnMobile": true,
+            "link": "%viewOnline%",
+            "styling": "none"
+          }
+        },
+        {
+          "columnLayout": "Single",
+          "moduleID": "Hero",
+          "layout": "simple",
+          "flair":["roundedTop", "roundedBottom"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "alt": "Hero"
+        },
+        {
+          "columnLayout": "Single",
+          "moduleID": "Hero",
+          "layout": "simple",
+          "flair":["fullWidth"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "alt": "SingleHero"
+        },
+        {
+          "columnLayout": "Double",
+          "moduleID": "Hero",
+          "layout": "imageLeft",
+          "bgColor": "#2171C7",
+          "flair":["roundedTop", "roundedBottom"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "title": "This module has a title.",
+          "copy": "Hero module, copy on the right!",
+          "alt": "Double-imageLeft"
+        },
+        {
+          "columnLayout": "Double",
+          "moduleID": "Hero",
+          "layout": "imageRight",
+          "bgColor": "#2123C7",
+          "flair":["roundedTop", "roundedBottom"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "copy": "Hero module, copy on the left!",
+          "alt": "Double-imageRight"
+        },
+        {
+          "columnLayout": "Single",
+          "moduleID": "Text",
+          "layout": "simple",
+          "copy": "This email was build by Colin Whelan with Nunjucks and awesome custom made HTML emails."
+        },
+        {
+          "columnLayout": "Double",
+          "moduleID": "Text",
+          "layout": "simple",
+          "leftCopy": "This email was build by Colin Whelan with Nunjucks and awesome custom made HTML emails.",
+          "rightCopy": "This is some copy in the other column."
+        },
+        {
+          "columnLayout": "Triple",
+          "moduleID": "Text",
+          "layout": "simple",
+          "leftCopy": "This email was build by Colin Whelan with Nunjucks and awesome custom made HTML emails.",
+          "centerCopy": "This is the some copy in the next column.",
+          "rightCopy": "This is some copy in the other column."
+        }
+      ]
+   },
+   {
+      "templateType": "perfect",
+      "experimentalSupport": false,
+      "lang":"en",
+      "spacing": {
+        "width": "640",
+        "gutters": "40"
+      },
+      "colors": {
+        "bodyBgColor": "#222222",
+        "templateBgColor": "#444444",
+        "primaryTextColor": "#ffffff"
+      },
+      "emailName":"Perfect Email",
+      "page": {
+        "title": "💯 Perfect Email",
+        "preview": "💯 Perfect Email",
+        "flair":["roundedTop", "roundedBottom"]
+      },
+      "modules": [
+        {
+          "columnLayout": "Single",
+          "moduleID": "Preheader",
+          "layout": "left",
+          "copy": "Perfect preheader",
+          "viewOnline": {
+            "visible": true,
+            "stackOnMobile": true,
+            "link": "%viewOnline%",
+            "styling": "none"
+          }
+        },
+        {
+          "columnLayout": "Single",
+          "moduleID": "Hero",
+          "layout": "simple",
+          "flair":["roundedTop", "roundedBottom"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "alt": "Hero"
+        },
+        {
+          "columnLayout": "Single",
+          "moduleID": "Hero",
+          "layout": "simple",
+          "flair":["fullWidth"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "alt": "SingleHero"
+        },
+        {
+          "columnLayout": "Double",
+          "moduleID": "Hero",
+          "layout": "imageLeft",
+          "bgColor": "#2171C7",
+          "flair":["roundedTop", "roundedBottom"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "title": "This module has a title.",
+          "copy": "Hero module, copy on the right!",
+          "alt": "Double-imageLeft"
+        },
+        {
+          "columnLayout": "Double",
+          "moduleID": "Hero",
+          "layout": "imageRight",
+          "bgColor": "#2123C7",
+          "flair":["roundedTop", "roundedBottom"],
+          "link": "https://www.linkedin.com/in/colin-whelan/",
+          "copy": "Hero module, copy on the left!",
+          "alt": "Double-imageRight"
+        },
+        {
+          "columnLayout": "Single",
+          "moduleID": "Text",
+          "layout": "simple",
+          "copy": "This email was build by Colin Whelan with Nunjucks and awesome custom made HTML emails."
+        },
+        {
+          "columnLayout": "Double",
+          "moduleID": "Text",
+          "layout": "simple",
+          "leftCopy": "This email was build by Colin Whelan with Nunjucks and awesome custom made HTML emails.",
+          "rightCopy": "This is some copy in the other column."
+        },
+        {
+          "columnLayout": "Triple",
+          "moduleID": "Text",
+          "layout": "simple",
+          "leftCopy": "This email was build by Colin Whelan with Nunjucks and awesome custom made HTML emails.",
+          "centerCopy": "This is the some copy in the next column.",
+          "rightCopy": "This is some copy in the other column."
+        }
+      ]
+   }
+]

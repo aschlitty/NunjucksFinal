@@ -1,0 +1,1458 @@
+{% macro css() %}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+  </style>
+  <!--<![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700);
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+  </style>
+  <!--<![endif]-->
+  <style type="text/css">
+  #outlook a {
+  padding: 0;
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  }
+  table,
+  td {
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  }
+  img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  }
+  p {
+  display: block;
+  margin: 13px 0;
+  }
+  .ExternalClass { width:100%; }
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+  table td p { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  h1, h2, h3, h4, h5, h6 { font-size: inherit; padding: 0; margin: 0; color: black; line-height: 100%; }
+  .applelinks a { text-decoration: none; color: inherit !important; }
+  a { color: black; text-decoration: none; }
+  a, a:link, a:visited { color: inherit; text-decoration: none; }
+  span.MsoHyperlink { mso-style-priority: 99; color: inherit; }
+  span.MsoHyperlinkFollowed { mso-style-priority: 99; color: inherit; }
+  img { border: 0px !important; }
+  @media only screen and (max-width: 640px) {
+  .ow100 { width: 100% !important; }
+  .w100 { width: 100% !important; }
+  .w90 { width: 90% !important; }
+  .w75 { width: 75% !important; }
+  .w60 { width: 60% !important; }
+  .w55 { width: 55% !important; }
+  .w50 { width: 50% !important; }
+  .w45 { width: 45% !important; }
+  .w40 { width: 40% !important; }
+  .w33 { width: 33% !important; }
+  .w25 { width: 25% !important; }
+  .w86px { width: 86px !important; }
+  .hide { display: none !important; }
+  .resize { width: 100% !important; height: auto !important; }
+  .resize img { max-width: 100% !important; height: auto !important; }
+  .resize2 img { width: 100% !important; height: auto !important; }
+  .resize a { width: auto !important; height: auto !important; }
+  .expand { width: 100% !important; display: block !important; }
+  .height0 { height: 0 !important; }
+  .hauto { height: auto !important; }
+  .column50 { width: 50%; }
+  .column50a { width: 50%; }
+  .column33 { width: 33.33%; }
+  .column25 { width: 25%; }
+  .column75 { width: 75%; }
+  .column66 { width: 66%; }
+  .tcenter { text-align: center !important; }
+  /*PADDING*/
+  .pad0 { padding: 0px !important; }
+  .pad5 { padding: 5px !important; }
+  .pad10 { padding: 10px !important; }
+  .pad15 { padding: 15px !important; }
+  .pad20 { padding: 20px !important; }
+  .pad25 { padding: 25px !important; }
+  .pad30 { padding: 30px !important; }
+  .padt0 { padding-top: 0px !important; }
+  .padt5 { padding-top: 5px !important; }
+  .padt10 { padding-top: 10px !important; }
+  .padt15 { padding-top: 15px !important; }
+  .padt20 { padding-top: 20px !important; }
+  .padt25 { padding-top: 25px !important; }
+  .padt30 { padding-top: 30px !important; }
+  .padr0 { padding-right: 0px !important; }
+  .padr5 { padding-right: 5px !important; }
+  .padr10 { padding-right: 10px !important; }
+  .padr15 { padding-right: 15px !important; }
+  .padr20 { padding-right: 20px !important; }
+  .padr25 { padding-right: 25px !important; }
+  .padr30 { padding-right: 30px !important; }
+  .padb0 { padding-bottom: 0px !important; }
+  .padb5 { padding-bottom: 5px !important; }
+  .padb10 { padding-bottom: 10px !important; }
+  .padb15 { padding-bottom: 15px !important; }
+  .padb20 { padding-bottom: 20px !important; }
+  .padb25 { padding-bottom: 25px !important; }
+  .padb30 { padding-bottom: 30px !important; }
+  .padb45 { padding-bottom: 45px !important; }
+  .padl0 { padding-left: 0px !important; }
+  .padl5 { padding-left: 5px !important; }
+  .padl10 { padding-left: 10px !important; }
+  .padl15 { padding-left: 15px !important; }
+  .padl20 { padding-left: 20px !important; }
+  .padl25 { padding-left: 25px !important; }
+  .padl30 { padding-left: 30px !important; }
+  }
+  </style>
+  <!-- START CAROUSEL STYES -->
+  <style type="text/css">
+  @media only screen and (min-width:480px) {
+  .sp-column-per-100 {
+  width: 100% !important;
+  max-width: 100%;
+  }
+  }
+  </style>
+  <style media="screen and (min-width:480px)">
+  .moz-text-html .sp-column-per-100 {
+  width: 100% !important;
+  max-width: 100%;
+  }
+  </style>
+  <style type="text/css">
+  .sp-carousel {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  }
+  .sp-carousel-f006c0fa9b09-icons-cell {
+  display: table-cell !important;
+  width: 44px !important;
+  }
+  .sp-carousel-radio,
+  .sp-carousel-next,
+  .sp-carousel-previous {
+  display: none !important;
+  }
+  .sp-carousel-thumbnail,
+  .sp-carousel-next,
+  .sp-carousel-previous {
+  touch-action: manipulation;
+  }
+  .sp-carousel-f006c0fa9b09-radio:checked+.sp-carousel-content .sp-carousel-image,
+  .sp-carousel-f006c0fa9b09-radio:checked+*+.sp-carousel-content .sp-carousel-image,
+  .sp-carousel-f006c0fa9b09-radio:checked+*+*+.sp-carousel-content .sp-carousel-image {
+  display: none !important;
+  }
+  .sp-carousel-f006c0fa9b09-radio-1:checked+*+*+.sp-carousel-content .sp-carousel-image-1,
+  .sp-carousel-f006c0fa9b09-radio-2:checked+*+.sp-carousel-content .sp-carousel-image-2,
+  .sp-carousel-f006c0fa9b09-radio-3:checked+.sp-carousel-content .sp-carousel-image-3 {
+  display: block !important;
+  }
+  .sp-carousel-previous-icons,
+  .sp-carousel-next-icons,
+  .sp-carousel-f006c0fa9b09-radio-1:checked+*+*+.sp-carousel-content .sp-carousel-next-2,
+  .sp-carousel-f006c0fa9b09-radio-2:checked+*+.sp-carousel-content .sp-carousel-next-3,
+  .sp-carousel-f006c0fa9b09-radio-3:checked+.sp-carousel-content .sp-carousel-next-1,
+  .sp-carousel-f006c0fa9b09-radio-1:checked+*+*+.sp-carousel-content .sp-carousel-previous-3,
+  .sp-carousel-f006c0fa9b09-radio-2:checked+*+.sp-carousel-content .sp-carousel-previous-1,
+  .sp-carousel-f006c0fa9b09-radio-3:checked+.sp-carousel-content .sp-carousel-previous-2 {
+  display: block !important;
+  }
+  .sp-carousel-f006c0fa9b09-radio-1:checked+*+*+.sp-carousel-content .sp-carousel-f006c0fa9b09-thumbnail-1,
+  .sp-carousel-f006c0fa9b09-radio-2:checked+*+.sp-carousel-content .sp-carousel-f006c0fa9b09-thumbnail-2,
+  .sp-carousel-f006c0fa9b09-radio-3:checked+.sp-carousel-content .sp-carousel-f006c0fa9b09-thumbnail-3 {
+  border-color: #cccccc !important;
+  }
+  .sp-carousel-image img+div,
+  .sp-carousel-thumbnail img+div {
+  display: none !important;
+  }
+  .sp-carousel-f006c0fa9b09-thumbnail:hover+*+*+.sp-carousel-main .sp-carousel-image,
+  .sp-carousel-f006c0fa9b09-thumbnail:hover+*+.sp-carousel-main .sp-carousel-image,
+  .sp-carousel-f006c0fa9b09-thumbnail:hover+.sp-carousel-main .sp-carousel-image {
+  display: none !important;
+  }
+  .sp-carousel-thumbnail:hover {
+  border-color: #fead0d !important;
+  }
+  .sp-carousel-f006c0fa9b09-thumbnail-1:hover+*+*+.sp-carousel-main .sp-carousel-image-1,
+  .sp-carousel-f006c0fa9b09-thumbnail-2:hover+*+.sp-carousel-main .sp-carousel-image-2,
+  .sp-carousel-f006c0fa9b09-thumbnail-3:hover+.sp-carousel-main .sp-carousel-image-3 {
+  display: block !important;
+  }
+  .sp-carousel noinput {
+  display: block !important;
+  }
+  .sp-carousel noinput .sp-carousel-image-1 {
+  display: block !important;
+  }
+  .sp-carousel noinput .sp-carousel-arrows,
+  .sp-carousel noinput .sp-carousel-thumbnails {
+  display: none !important;
+  }
+  [owa] .sp-carousel-thumbnail {
+  display: none !important;
+  }
+  @media screen yahoo {
+  .sp-carousel-f006c0fa9b09-icons-cell,
+  .sp-carousel-previous-icons,
+  .sp-carousel-next-icons {
+  display: none !important;
+  }
+  .sp-carousel-f006c0fa9b09-radio-1:checked+*+*+.sp-carousel-content .sp-carousel-f006c0fa9b09-thumbnail-1 {
+  border-color: transparent;
+  }
+  }
+  </style>
+{% endmacro %}
+
+{% macro m_preheaderSection(lang, preheaderText) %}
+{% if lang == 'fr' %}
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+  <th valign="top" class="centerm expandm" style="text-align: left; font-size: 11px; font-weight: normal; font-family: arial, sans-serif; color: #000001; padding-top: 10px;">
+    {{ preheaderText }}
+    <br />
+      Voir la version <a href="" target="_blank" style="color: #EB0000; text-decoration: underline;">en ligne</a>.
+  </th>
+  <th valign="top" class="centerm expandm" style="text-align: right; font-size: 11px; font-weight: normal; font-family: arial, sans-serif; color: #000001; padding-top: 10px;">
+      Member&nbsp;#:&nbsp;<span style="white-space: nowrap !important;"><a style="color: #000000; text-decoration: none;"><span>[%[MASTER.CARD_ID_SPACER]%]</span></a></span>
+  </th>
+</tr>
+</table>
+{% else %}
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+  <th valign="top" class="centerm expandm" style="text-align: left; font-size: 11px; font-weight: normal; font-family: arial, sans-serif; color: #000001; padding-top: 10px;">
+    {{ preheaderText }}
+    <br />
+    View the <a href="" target="_blank" style="text-decoration:underline; color:#eb0000;">online version</a>
+  </th>
+  <th valign="top" class="centerm expandm" style="text-align: right; font-size: 11px; font-weight: normal; font-family: arial, sans-serif; color: #000001; padding-top: 10px;">
+      Member&nbsp;#:&nbsp;<span style="white-space: nowrap !important;"><a style="color: #000000; text-decoration: none;"><span>[%[MASTER.CARD_ID_SPACER]%]</span></a></span>
+  </th>
+</tr>
+</table>
+{% endif %}
+{% endmacro %}
+
+{% macro m_pointsSection() %}
+  {% if lang == 'fr' %}
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tbody>
+        <tr>
+          <td align="" style="" class="">
+            <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 1000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(100)" name="reward_1dollar" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">1 $ sur vos achats d'essence ou d'articles de d&eacute;panneur</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">1&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+            <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 1000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(100)" name="reward_storedollars" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">[%formatnumber( todecimal( [MASTER.DOLLAR_PTS] ), '## ###' )%]&nbsp;$ sur vos achats d'essence ou d'articles de d&eacute;panneur</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">[%[MASTER.CURR_PTS_BAL_FR]%] points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="" class="">
+            <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 20000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(101)" name="reward_fsr5_999" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">Carte &Eacute;conomie sur l'essence en prime de 5&nbsp;¢</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">10&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+
+            <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 20000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(104)" name="reward_fsr10" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">Carte &Eacute;conomie sur l'essence en prime de 10&nbsp;¢</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">20&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="" class="">
+            <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 50000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(102)" name="reward_carwash_999" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">Billet de&nbsp;lavage</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">10&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+
+            <sg:conditional expression="all(ge([MASTER.CURR_PTS_BAL], 50000), lt([MASTER.CURR_PTS_BAL], 185000))">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(103)" name="reward_washngo" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">Carte Lavez Partez</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">50&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+
+            <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 185000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(102)" name="reward_seasonpass" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">Carte acc&egrave;s lave-auto</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">185&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="" class="">
+            <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 10000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(105)" name="reward_10partners" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">10 $ sur vos achats chez nos partneraires</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">10&nbsp;000 points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+            <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 10000)">
+              <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+                <tr>
+                  <td align="right" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(103)" name="reward_partners" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:12px;text-decoration:none;" target="_news">[%formatnumber( todecimal( sub([MASTER.DOLLAR_PTS], mod([MASTER.DOLLAR_PTS], 10)) ), '#,###' )%] $ sur vos achats chez nos partneraires</a></td>
+                  <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; white-space:nowrap; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">[%formatnumber( todecimal( sub([MASTER.CURR_PTS_BAL], mod([MASTER.CURR_PTS_BAL], 10000)) ), '## ###' )%] points</td>
+                </tr>
+              </table>
+            </sg:conditional>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+{% else %}
+<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tbody>
+    <tr>
+      <td align="right" style="" class="">
+        <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 1000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(100)" name="reward_1dollar" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">$1 off fuel or in&#x2011;store purchases</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">1,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+        <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 1000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(100)" name="reward_storedollars" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">$[%formatnumber( todecimal( [MASTER.DOLLAR_PTS] ), '#,###' )%] off fuel or in&#x2011;store purchases</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">[%formatnumber( todecimal( [MASTER.CURR_PTS_BAL] ), '#,###' )%] points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" style="" class="">
+        <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 20000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(101)" name="reward_fsr5_999" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">5&cent; Fuel Savings Reward&nbsp;card</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">10,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+        <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 20000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(104)" name="reward_fsr10" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">10&cent; Fuel Savings Reward&nbsp;card</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">20,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" style="" class="">
+        <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 50000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(102)" name="reward_carwash_999" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">Car wash ticket</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">10,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+        <sg:conditional expression="all(ge([MASTER.CURR_PTS_BAL], 50000), lt([MASTER.CURR_PTS_BAL], 185000))">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(138)" name="reward_washngo" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">Wash &amp; Go Card</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">50,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+        <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 185000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(105)" name="reward_seasonpass" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">Car Wash Season&nbsp;Pass</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">185,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" style="" class="">
+        <sg:conditional expression="lt([MASTER.CURR_PTS_BAL], 10000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="left" class="rewardsCSS" style="min-width: 150px; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(103)" name="reward_10partners" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">$10 off with our Partners</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">10,000 points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+        <sg:conditional expression="ge([MASTER.CURR_PTS_BAL], 10000)">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%" role="presentation">
+          <tr>
+            <td align="right" class="rewardsCSS" style="min-width: 150px; text-align: right; font-family: arial, sans-serif; color: #e6e6e6; padding: 0px 10px 3px 0px;" valign="top"><a expr:href="LINK(103)" name="reward_partners" style="font-family:Arial, Helvetica, sans-serif;color:#ffffff;font-weight:bold;font-size:13px;text-decoration:none;" target="_news">$[%formatnumber( todecimal( sub([MASTER.DOLLAR_PTS], mod([MASTER.DOLLAR_PTS], 10)) ), '#,###' )%] off with our Partners</a></td>
+            <td align="left" class="pointsCSS" style="border-left:1px solid #cccccc;width:150px; font-family: arial, sans-serif; color: #ffffff; padding: 0px 0px 3px 10px;" valign="top" width="150">[%formatnumber( todecimal( sub([MASTER.CURR_PTS_BAL], mod([MASTER.CURR_PTS_BAL], 10000)) ), '#,###' )%] points</td>
+          </tr>
+        </table>
+        </sg:conditional>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endif %}
+{% endmacro %}
+
+{% macro m_exclusiveOffers(count, segmentID=0001) -%}
+<sg:conditional expression="eq(eventValue('SEGMENT_ID'), '{{ segmentID-1+count }}'))">
+{% if lang=='fr' -%}
+  <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="" bgcolor="#ffffff" role="presentation">
+    <tr>
+      <td style="background-color: #000000;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 2px solid #c4c4c4; border-right: 2px solid #c4c4c4; border-left: 2px solid #c4c4c4;" role="presentation">
+          <tr>
+            <td class="" bgcolor="#000000">
+              <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/YourExclusiveOffer_fr.png" width="260" class="resize" border="0" style="display:block; color: #ffffff; font-size: 22px; font-weight: bold; font-family: arial; max-width: 260px;" alt="Votre offre exclusive." />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="" class="">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 2px solid #c4c4c4; border-right: 2px solid #c4c4c4; border-left: 2px solid #c4c4c4;" role="presentation">
+          <tr>
+            <td style="font-weight:normal;padding: 20px 20px 0px 20px;" class="expandm" valign="top" align="center">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+                <tr>
+                  <td valign="top" align="" style="font-size: 10px; line-height: 10px;" class="hide">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="">
+                    <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/{{ bonusPoints | replace(' ', '') if count!=8 else '750' }}_points_fr.png" width="140" alt="Prime {{ bonusPoints | replace(' ', '&nbsp;') if count!=8 else '750' }} points" hspace="0" vspace="0" border="0" style="width:140px;display:block; font-weight: bold; font-family: arial, sans-serif; font-size: 18px; color: #000000;" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top" align="left" class="expandm pad20" style="color:#000000;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:normal; vertical-align: top; padding: 20px 20px 0px 20px;">
+              <span style="font-family:Arial, Helvetica, sans-serif;font-size:20px;line-height:25px;color:#000000;font-weight:bold">
+                Obtenez {{ bonusPoints | replace(' ', '&nbsp;') if count!=8 else "750" }}&nbsp;points en prime sur l&rsquo;essence.
+              </span>
+              <span style="line-height:10px;"><br /><br /></span>
+              Faites {{ "1&nbsp;achat" if count==1 or count==8 else count+"&nbsp;achats" }} d'essence (min. 25 L{{ "" if count==1 or count==8 else " chacun" }}) d'ici au <a style="color: #000000; text-decoration: none;">{{ purchaseBy | replace(' ', '&nbsp;') }}</a> et vous obtiendrez {{ bonusPoints | replace(' ', '&nbsp;') if count!=8 else "750" }}&nbsp;points en prime<sup class="sup">1</sup>. <a href="{{ offerLink }}" target="_news" style="color:#EB0000;text-decoration:underline;">Activez votre offre d&egrave;s maintenant</a> et n'oubliez pas d'<strong>utiliser votre carte <span style="white-space: nowrap;">Petro&zwj;-&zwj;Points</span><sup class="sup">MC</sup></strong> ou de payer avec l'application <span style="white-space: nowrap;">Canada</span><sup class="sup">MC</sup>.
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td align="left" style="padding-top: 16px;padding-bottom: 20px;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="209" class="w100m" style="width:209px;" role="presentation">
+                      <tr>
+                        <td align="center" style="">
+                          <a href="{{ offerLink }}" name="ACTIVATE YOUR OFFER" target="_blank">
+                            <img alt="ACTIVEZ VOTRE OFFRE" src="https://email.petro-canada.ca/images/SMC/Buttons/ActivateYourOffer_fr.png" border="0" style="display:block; font-weight: bold; font-family: arial; font-size: 13px; line-height: 40px; color: #ffffff;background-color: #EB0000;" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+{% else -%}
+  <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="" bgcolor="#ffffff" role="presentation">
+    <tr>
+      <td style="background-color: #000000;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 2px solid #c4c4c4; border-right: 2px solid #c4c4c4; border-left: 2px solid #c4c4c4;" role="presentation">
+          <tr>
+            <td class="" bgcolor="#000000">
+              <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/Your_exclusive_offer_recrop.png" width="260" class="resize2" border="0" style="display:block; color: #ffffff; font-size: 22px; font-weight: bold; font-family: arial; max-width: 260px;" alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your exclusive offer" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="" class="">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 2px solid #c4c4c4; border-right: 2px solid #c4c4c4; border-left: 2px solid #c4c4c4;" role="presentation">
+          <tr>
+            <td style="font-weight:normal;padding: 20px 20px 0px 20px;" class="expandm" valign="top" align="center">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+                <tr>
+                  <td valign="top" align="" style="font-size: 10px; line-height: 10px;" class="hide">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="">
+                    <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/{{ bonusPoints | replace(',', '') | replace(' ', '') if count!=8 else '750' }}_points.png" width="140" alt="Bonus {{ bonusPoints if count!=8 else '750' }} Points" hspace="0" vspace="0" border="0" style="width:140px;display:block; font-weight: bold; font-family: arial, sans-serif; font-size: 18px; color: #000000;" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top" align="left" class="expandm pad20" style="color:#000000;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:normal; vertical-align: top; padding: 20px 20px 0px 20px;">
+              <span style="font-family:Arial, Helvetica, sans-serif;font-size:20px;line-height:25px;color:#000000;font-weight:bold">
+                Collect {{ bonusPoints if count!=8 else "750" }}&nbsp;bonus points on&nbsp;fuel.
+              </span>
+              <span style="line-height:10px;"><br /><br /></span>
+              Make {{ "1&nbsp;fuel purchase" if count==1 or count==8 else count+"&nbsp;fuel purchases" }} (min.&nbsp;25L{{ "" if count==1 or count==8 else " each" }}) by <a style="color: #000000; text-decoration: none;">{{ purchaseBy | replace(' ', '&nbsp;') }}</a> and collect {{ bonusPoints if count!=8 else "750" }}&nbsp;bonus points<sup class="sup">1</sup>.
+              <a href="{{ offerLink }}" target="_news" style="color:#EB0000;text-decoration:underline;">Activate your offer now</a> and don&rsquo;t forget to <strong>swipe your <span style="white-space: nowrap;">Petro&zwj;-&zwj;Points</span>&trade;&nbsp;card with the Petro&zwj;-&zwj;Canada&trade;&nbsp;app</strong>.
+              <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td style="padding-top: 16px;padding-bottom: 20px;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="209" class="w100m" style="width:209px;" role="presentation">
+                      <tr>
+                        <td align="center" style="">
+                          <a href="{{ offerLink }}" style="text-decoration: none;" target="_blank" name="ACTIVATE YOUR OFFER">
+                            <img alt="ACTIVATE YOUR OFFER" src="https://email.petro-canada.ca/images/SMC/2022/dynamic/btn_ActivateYourOffer.png" width="209" border="0" style="width:209px;display:block; font-weight: bold; font-family: arial, sans-serif; font-size: 13px; line-height: 40px; color: #ffffff;background-color: #EB0000;" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+{% endif -%}
+</sg:conditional>
+{% endmacro -%}
+
+
+{% macro m_NU(NU, count) -%}
+{# Only add conditional if there is logic #}
+{% if NU.logic.length > 0 -%}
+  {# create a conditional based on the logic blocks of NU #}
+  <sg:conditional expression="all({% for logic in NU.logic %}{{ logic.operator }}([eventValue('{{ logic.field }}')], '{{ logic.value }}'){% if not loop.last %},{% endif %}{% endfor %})">
+{% endif -%}
+<table cellspacing="0" cellpadding="0" border="0" width="100%" class="" style="border: 2px solid #c4c4c4;" align="center" role="presentation">
+  <tr>
+    <td align="" style="" class="expandm" valign="top">
+
+{% if NU.type == 'titleTop-imageTopHalf' -%}
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+        <tr>
+          <td style="text-align: left; font-family: arial, sans-serif;font-weight: bold; font-size: 20px; line-height: 22px; padding: 20px; color: #231f20;" class="" colspan="2">
+            {{ NU.title }}
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="" class="">
+            <table border="0" cellpadding="0" dir="rtl" cellspacing="0" width="100%" style="" role="presentation">
+              <tr>
+                <th valign="top" align="center" style="font-weight: normal;" class="expandm">
+                  <table cellspacing="0" cellpadding="0" dir="ltr" border="0" width="220" class="" style="width:220px;" role="presentation">
+                    <tr>
+                      <td align="center" style="padding: 0px 20px;" class="padb20">
+                        <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_image">
+                          <img src="./images/NU_0{{ count }}{{ '_fr' if lang=='fr'}}.png" width="220" border="0" style="display:block; font-size: 16px; font-weight: bold; font-family: arial, sans-serif; color: #000000; text-transform: uppercase; width: 220px;" alt="{{ NU.imageAlt }}" class="resize" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+                <th valign="top" style="font-weight: normal;" class="expandm">
+                  <table border="0" cellpadding="0" cellspacing="0" dir="ltr" width="100%" style="" role="presentation">
+                    <tr>
+                      <td align="" style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px; padding: 0px 0px 0px 20px;line-height: 20px; color: #231f20;" class="padr20 padl20">
+                        {{ NU.copy | nl2br }}
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 20px; color: #231f20;padding: 20px;" class="" colspan="2">
+            {{ NU.copy | nl2br }}
+            {% if buttonName or buttonAltText %}
+            <br /><br />
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+              <tr>
+                <td align="left" style="">
+                  <table border="0" cellpadding="0" cellspacing="0" style="" class="w100m" role="presentation">
+                    <tr>
+                      <td style="font-family: arial, sans-serif; font-weight: normal; font-size: 16px;" class="" align="center">
+                        <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_button">
+                          {{ m_button(lang, NU.buttonName, NU.buttonAltText) }}
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            {% endif %}
+          </td>
+        </tr>
+      </table>
+{% elif NU.type == 'titleTop-imageFull' -%}
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+        <tr>
+          <td style="text-align: left; font-family: arial, sans-serif;font-weight: bold; font-size: 20px; line-height: 22px; padding: 20px; color: #231f20;" class="" colspan="2">
+            {{ NU.title }}
+          </td>
+        </tr>
+        <tr>
+          <th valign="top" style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px; padding: 0px 0px 0px 20px;line-height: 20px; color: #231f20;" class="expandm padr20 padl20">
+            {{ NU.copy | nl2br }}
+          </th>
+          <th valign="top" align="left" style="font-weight: normal;" class="expandm">
+            <table cellspacing="0" cellpadding="0" border="0" class="w100m" role="presentation">
+              <tr>
+                <td align="center" style="padding: 30px 20px 0px 20px;" class="padt20">
+                  <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_image">
+                    <img src="./images/NU_0{{ count }}{{ '_fr' if lang=='fr'}}.png" width="220" border="0" style="display:block; font-size: 16px; font-weight: bold; font-family: arial, sans-serif; color: #000000; text-transform: uppercase; width: 220px;" alt="{{ NU.imageAlt }}" class="resize" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </th>
+        </tr>
+        {% if buttonName or buttonAltText %}
+        <tr>
+          <td style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 20px; color: #231f20;padding: 20px;" class="" colspan="2">
+            <table cellspacing="0" cellpadding="0" border="0" class="w100m" role="presentation">
+              <tr>
+                <td style="font-family: arial, sans-serif; font-weight: normal; font-size: 16px;" class="" align="center">
+                  <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_button">
+                   {{ m_button(lang, NU.buttonName, NU.buttonAltText) }}
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        {% endif %}
+      </table>
+{% elif NU.type == 'titleTop-imageTopCenter' -%}
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+        <tr>
+          <td style="text-align: left; font-family: arial, sans-serif;font-weight: bold; font-size: 20px; line-height: 22px; padding: 20px; color: #231f20;" class="" colspan="2">
+            {{ NU.title }}
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 0px 20px 20px 20px;">
+            <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_image">
+              <img src="./images/NU_0{{ count }}{{ '_fr' if lang=='fr'}}.png" width="" border="0" style="display:block; font-size: 16px; font-weight: bold; font-family: arial, sans-serif; color: #000000; text-transform: uppercase;" alt="{{ NU.imageAlt }}" class="resize" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th valign="top" style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px; padding: 0px 20px 0px 20px;line-height: 20px; color: #231f20;" class="expandm padr20 padl20">
+            {{ NU.copy | nl2br }}
+          </th>
+        </tr>
+        {% if buttonName or buttonAltText %}
+        <tr>
+          <td style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 20px; color: #231f20;padding: 20px;" class="" colspan="2">
+            <table cellspacing="0" cellpadding="0" border="0" class="w100m" role="presentation">
+              <tr>
+                <td style="font-family: arial, sans-serif; font-weight: normal; font-size: 16px;" class="" align="center">
+                  <a href="{{ link }}" target="_blank" name="{{ NU.name }}_button">
+                    {{ m_button(lang, NU.buttonName, NU.buttonAltText) }}
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        {% endif %}
+      </table>
+{% elif NU.type == 'textHalf-ImageRight' -%}
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+        <tr>
+          <th valign="top" style="padding: 0px 20px;font-weight: normal;" class="expandm">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+              <tr>
+                <td style="text-align: left; font-family: arial, sans-serif;font-weight: bold; font-size: 20px; line-height: 22px; color: #231f20; padding-right: 20px; padding-top: 20px;" class="" colspan="2">
+                  {{ NU.title }}
+                </td>
+              </tr>
+              <tr>
+                <td align="" style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 20px; color: #231f20; padding-top: 20px;" class="">
+                  {{ NU.copy | nl2br }}
+                </td>
+              </tr>
+              {% if buttonName or buttonAltText %}
+              <tr>
+                <td style="text-align: left; font-family: arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 20px; color: #231f20; padding: 20px 0;" class="" colspan="2">
+                  <table cellspacing="0" cellpadding="0" border="0" class="w100m" role="presentation">
+                    <tr>
+                      <td style="font-family: arial, sans-serif; font-weight: normal; font-size: 16px;" class="" align="center">
+                        <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_button">
+                        {{ m_button(lang, NU.buttonName, NU.buttonAltText) }}
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              {% endif %}
+            </table>
+          </th>
+          <th valign="top" align="left" style="font-weight: normal;" class="expandm">
+            <table cellspacing="0" cellpadding="0" border="0" class="w100m" role="presentation">
+              <tr>
+                <td align="center" style="padding: 0px 0px 0px 0px;" class="padt20">
+                  <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_image">
+                    <img src="./images/NU_0{{ count }}{{ '_fr' if lang=='fr'}}.png" border="0" style="display:block; font-size: 16px; font-weight: bold; font-family: arial, sans-serif; color: #000000; text-transform: uppercase;" alt="{{ NU.imageAlt }}" class="resize" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </th>
+        </tr>
+      </table>
+{% else -%}
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+        <tr>
+          <td align="center" style="">
+            <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_image">
+              <img src="./images/NU_0{{ count }}{{ '_fr' if lang=='fr'}}.png" border="0" style="display:block; max-width:556px; font-size: 16px; font-weight: bold; font-family: arial, sans-serif; color: #000000; text-transform: uppercase;" alt="{{ NU.imageAlt }}" class="resize" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="text-align: left; font-family: arial, sans-serif; font-size: 16px; line-height: 20px; color: #231f20; padding: 20px;">
+            <span style="font-weight: bold; font-size: 20px; line-height: 22px;">{{ NU.title }}</span>
+            <br /><br />
+            {{ NU.copy | nl2br }}
+            {% if buttonName or buttonAltText %}
+            <br /><br />
+            <table border="0" cellpadding="0" cellspacing="0" style="" class="w100m" role="presentation">
+              <tr>
+                <td style="font-family: arial, sans-serif; font-weight: normal; font-size: 16px;" class="" align="center">
+                  <a href="{{ NU.link }}" target="_blank" name="{{ NU.name }}_button">
+                   {{ m_button(lang, NU.buttonName, NU.buttonAltText) }}
+                  </a>
+                </td>
+              </tr>
+            </table>
+            {% endif %}
+          </td>
+        </tr>
+      </table>
+{% endif -%}
+{% if NU.extraCopy %}
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+        <tr>
+          <td valign="top" style="padding: 0px 15px 0px 18px;text-align: left; font-weight: normal; font-family: arial; font-size: 12px; line-height: 20px;">
+            {{ NU.extraCopy | nl2br }}
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="font-size: 10px; line-height: 20px;" class="">
+            &nbsp;
+          </td>
+        </tr>
+      </table>
+      {% endif %}
+    </td>
+  </tr>
+</table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+<tr>
+<td align="" style="padding-bottom: 15px; font-size: 0px; line-height: 0px;" class="">
+  &nbsp;
+</td>
+</tr>
+</table>
+{% if NU.logic.length > 0 %}
+</sg:conditional>
+{% endif -%}
+{% endmacro -%}
+
+{% macro m_textHeight(fieldToCheck) -%}
+  {#- counting line breaks to account for spacing -#}
+{%- set newlineCount = 0 -%}
+{%- set copyTemp = fieldToCheck.copy -%}
+
+
+{#- runs plenty to be absolutely  sure all new lines are counted -#}
+{% set maxRuns = 50 %}
+{%- for i in range(0, maxRuns) -%}
+  {%- if i == 0 -%}
+    {%- set newlineCount = 0 -%}
+  {%- endif -%}
+  {%- if '\n\n' in copyTemp -%}
+    {%- set newlineCount = newlineCount+1 -%}
+    {#- replace characters so character counter will count correct number of lines -#}
+    {#- not perfect but it works quite well - the replacement length will need to change per text box width -#}
+    {%- set copyTemp = copyTemp | replace(r/\n\n/, "") -%}
+  {%- else -%}
+    {#- ends the loop if no more are found -#}
+    {%- set i = maxRuns -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{#- Math for calculating top padding of articles -#}
+{#- Nunjucks has no built in ceiling, so this does that -#}
+{#- add 1 to final output since we are calculating the floor, and want the next int -#}
+{#- divide by x, where x is the number of characters per line -#}
+{#- substract 1 from the initial character count to prevent line miscount when length == characters per line -#}
+{%- set fieldToCheck = fieldToCheck|addAttributes('lineCount', ((copyTemp.length-1+(newlineCount*fieldToCheck.charactersPerLine)) / fieldToCheck.charactersPerLine) | round(0, "floor") + 1) -%}
+
+{%- set textHeight = ((fieldToCheck.lineCount + newlineCount) * fieldToCheck.lineHeight) -%}
+{{- textHeight -}}
+{% endmacro -%}
+
+{% macro m_item(module, item, count, lang, height, padding, iteration) -%}
+{% if module == "EMP" %}
+  {% set linkname = 'S3'+count+'_'+item.name %}
+{% else %}
+  {% set linkname = 'S4'+count+'_'+item.name %}
+{% endif %}
+
+<tr>
+  <!--Content-->
+  <td valign="top">
+    <!--[if mso]>
+    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:266px;height:{{ height }}px;" id="mso_{{module}}_0{{ count }}-{{ iteration }}">
+    <v:textbox inset="0,0,0,0">
+    <![endif]-->
+    <div>
+      <table id="{{module}}_0{{ count }}-{{ iteration }}" cellspacing="0" cellpadding="0" border="0" width="100%" style="height:{{ height }}px;" class="resize3" role="presentation">
+        <tr>
+          <td valign="top" align="" style="font-size: 10px; line-height: 20px;" class="">
+            &nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" class="padr20" style="padding: 0px 20px 0px 20px;text-align: left; font-family: arial; font-weight: bold;font-size: 22px; line-height: 24px;">
+            {{ item.title }}
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="" style="font-size: 10px; line-height: 20px;" class="lineHeightSpacerImages">
+            &nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding: 0px 15px 0px 18px;text-align: left; font-weight: normal; font-family: arial; font-size: 16px; line-height: 20px;">
+            {{ item.copy | nl2br }}
+          </td>
+        </tr>
+        <tr>
+          <td id="{{module}}_0{{ count }}-{{ iteration }}_topPadding" valign="top" align="" style="font-size: 10px; line-height: 20px;" class="lineHeightSpacerImages">
+            &nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="center" style="padding: 0px {{ 20 if item.image.width < 226 else 0}}px" class="">
+            <a href="{{ item.link }}" target="_blank" name="{{ linkname }}_image">
+              <img src="./images/{{ module }}_0{{ count }}{{ '_fr' if lang=='fr'}}.png" style="max-width:266px; display:block;font-family:Arial, Helvetica, sans-serif;color:#000000;font-size:18px;font-weight:bold;" border="0" alt="{{ item.imageAlt }}" class="resize mw350px" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td id="{{module}}_0{{ count }}-{{ iteration }}_bottomPadding" valign="top" align="" style="font-size: 10px; line-height: 20px;" class="lineHeightSpacerImages">
+            &nbsp;
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--[if mso]>
+    </v:textbox>
+    </v:rect>
+    <![endif]-->
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+      <tr>
+        <td align="left" valign="top" class="" style="" class="">
+          <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+            <tr>
+              <td align="center" class="">
+                <a href="{{ item.link }}" target="_blank" name="{{ linkname }}_button">
+                {{ m_button(lang, item.buttonName, item.buttonAltText) }}
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="" style="font-size: 10px; line-height: 20px;" class="">
+          &nbsp;
+        </td>
+      </tr>
+      {% if item.extraCopy %}
+        <tr>
+          <td id="{{module}}_0{{ count }}-{{ iteration }}_extraCopy" valign="top" style="padding: 0px 15px 0px 18px;text-align: left; font-weight: normal; font-family: arial; font-size: 12px; line-height: 20px;">
+            {{ item.extraCopy | nl2br }}
+          </td>
+        </tr>
+        <tr>
+          <td align="" style="font-size: 10px; line-height: 20px;" class="">
+            &nbsp;
+          </td>
+        </tr>
+      {% endif %}
+    </table>
+  </td>
+</tr>
+{% endmacro -%}
+
+
+{%- macro m_EMP_DYK(EMP, count_EMP, iteration_EMP, DYK, count_DYK, iteration_DYK) -%}
+{# Only add conditional if there is logic #}
+{%- if EMP.logic.length > 0 or DYK.logic.length > 0 -%}
+  {# create a conditional based on the logic blocks of EMP and DYK #}
+  <sg:conditional expression="all({%- for logic in EMP.logic -%}{{ logic.operator }}([eventValue('{{ logic.field }}')], '{{ logic.value }}'){%- if not loop.last or DYK.logic.length > 0 -%},{%- endif -%}{%- endfor -%}{%- for logic in DYK.logic -%}{{ logic.operator }}([eventValue('{{ logic.field }}')], '{{ logic.value }}'){%- if not loop.last -%},{%- endif -%}{%- endfor -%})">
+{%- endif -%}
+
+{%- set EMP_titleHeight = m_textHeight({"copy":EMP.title,"lineHeight":24,"charactersPerLine":18})|trim -%}
+{%- set EMP_copyHeight = m_textHeight({"copy":EMP.copy,"lineHeight":20,"charactersPerLine":30})|trim -%}
+
+
+
+{# 4 * 20px spacers #}
+{%- set spacerHeight = (4*20) -%}
+{%- set EMP_itemHeight = EMP_titleHeight|int + EMP_copyHeight|int + spacerHeight + EMP.image.height -%}
+
+{%- set DYK_titleHeight = m_textHeight({"copy":DYK.title,"lineHeight":24,"charactersPerLine":18})|trim -%}
+{%- set DYK_copyHeight = m_textHeight({"copy":DYK.copy,"lineHeight":20,"charactersPerLine":30})|trim -%}
+
+{%- set DYK_itemHeight = DYK_titleHeight|int + DYK_copyHeight|int + spacerHeight + DYK.image.height -%}
+
+{%- if EMP_itemHeight > DYK_itemHeight -%}
+  {%- set maxHeight = EMP_itemHeight -%}
+{%- else -%}
+  {%- set maxHeight = DYK_itemHeight -%}
+{%- endif -%}
+
+{% set EMP_height = maxHeight %}
+{% set DYK_height = maxHeight %}
+
+{% set EMP_extraCopy = 0 %}
+{% if EMP.extraCopy %}
+  {% set EMP_extraCopy = m_textHeight({"copy":EMP.extraCopy,"lineHeight":20,"charactersPerLine":30})|trim -%}
+  {# add 20 for the extra spacer #}
+  {% set EMP_extraCopy = EMP_extraCopy|int + 20 %}
+
+  {% set DYK_height = DYK_height + EMP_extraCopy %}
+{% endif %}
+
+{% set DYK_extraCopy = 0 %}
+{% if DYK.extraCopy %}
+  {% set DYK_extraCopy = m_textHeight({"copy":DYK.extraCopy,"lineHeight":20,"charactersPerLine":30})|trim -%}
+  {# add 20 for the extra spacer #}
+  {% set DYK_extraCopy = DYK_extraCopy|int + 20 %}
+  {% set EMP_height = EMP_height + DYK_extraCopy %}
+{% endif %}
+
+{# debugging #}
+
+{# EMP height: {{ EMP_height }} <br />
+EMP title height: {{ EMP_titleHeight }}<br>
+EMP copy height:  {{ EMP_copyHeight }}<br>
+EMP image height:  {{ EMP.image.height }}
+<br><br>
+DYK height: {{ DYK_height }} <br />
+DYK title height: {{ DYK_titleHeight }}<br>
+DYK copy height:  {{ DYK_copyHeight }}<br>
+DYK image height:  {{ DYK.image.height }}
+<br><br> #}
+
+{# Spread padding across top and bottom #}
+{%- set EMP_padding = (EMP_height-EMP_itemHeight)/2 -%}
+{%- set DYK_padding = (DYK_height-DYK_itemHeight)/2 -%}
+
+<table class="EMP_DYK" cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+  <tr>
+    <!--Box 1-->
+    <th style="border: 2px solid #c4c4c4; font-weight: normal;" valign="top" class="expandm">
+      <table cellspacing="0" cellpadding="0" border="0" style="width:266px;background-color: #ffffff;" width="266" class="w100m" role="presentation">
+        <tr>
+          <td colspan="2" bgcolor="#000000">
+            {% if lang == 'fr' -%}
+              <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/EarnMorePoints_FR.png" width="266" class="resize" border="0" style="display:block; color: #ffffff; font-size: 22px; font-weight: bold; font-family: arial; max-width: 267px;" alt="Obtenez plus de points" />
+            {% else -%}
+              <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/EarnMorePoints.png" width="266" border="0" style="display:block; color: #ffffff; font-size: 22px; font-weight: bold; font-family: arial;" alt="Earn more points" />
+            {% endif -%}
+          </td>
+        </tr>
+        {{- m_item('EMP', EMP, count_EMP, lang, EMP_height, EMP_padding, iteration_EMP) -}}
+      </table>
+    </th>
+    <!--/Box 1-->
+    <th align="" style="width: 20px; font-weight: normal;" width="20" class="expandm">
+      &nbsp;
+    </th>
+    <!--Box 2-->
+    <th style="border: 2px solid #c4c4c4; font-weight: normal;" valign="top" class="expandm">
+      <table cellspacing="0" cellpadding="0" border="0" style="width:266px;background-color: #ffffff;" width="266" class="w100m" role="presentation">
+        <tr>
+          <td colspan="2" bgcolor="#000000">
+            {% if lang == 'fr' -%}
+              <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/DidYouKnow_FR.png" width="190" border="0" style="display:block; color: #ffffff; font-size: 22px; font-weight: bold; font-family: arial;" alt="Le saviez&zwj;-&zwj;vous?" />
+            {% else -%}
+              <img src="https://email.petro-canada.ca/images/SMC/2022/dynamic/DidYouKnow.png" width="190" border="0" style="display:block; color: #ffffff; font-size: 22px; font-weight: bold; font-family: arial;" alt="Did you know?" />
+            {% endif -%}
+          </td>
+        </tr>
+        {{- m_item('DYK', DYK, count_DYK, lang, DYK_height, DYK_padding, iteration_DYK) -}}
+      </table>
+    </th>
+    <!--/Box 2-->
+  </tr>
+</table>
+{% if EMP.logic.length > 0 or DYK.logic.length > 0 -%}
+</sg:conditional>
+{% endif -%}
+{% endmacro -%}
+
+{% macro m_button(lang, name, altText) -%}
+<img src="./images/btn_{{ name | title | replace(' ', '') if name!='' else altText | title | replace(' ', '') }}{{ '_fr' if lang=='fr'}}.png" border="0" style="display:block; font-size: {{ '16px' if altText.length < 18 else '12px' }}; line-height: 40px; font-weight: bold; font-family: arial, sans-serif; color: #ffffff; background-color: #EB0000; text-transform: uppercase;" alt="{{ altText | upper | replace(' ', '&nbsp;') }}" />
+{% endmacro -%}
+
+{% macro m_legal_exclusiveOffers(count, segmentID=0001) -%}
+<sg:conditional expression="eq(eventValue('SEGMENT_ID'), '{{ segmentID-1+count }}'))">
+{% if lang == 'fr' -%}
+<sup class="sup">1</sup> Vous devez cliquer sur le bouton pour activer l'offre. Apr&egrave;s avoir activ&eacute; cette offre, veuillez attendre jusqu'&agrave; 24&nbsp;heures avant de faire votre achat. Utilisez votre carte <span style="white-space: nowrap;">Petro&zwj;-&zwj;Points</span> ou utilisez votre carte de d&eacute;bit ou de cr&eacute;dit RBC li&eacute;e lors de votre prochain achat admissible entre le <a style="color: #000000; text-decoration: none;">{{ validStart | replace(' ', '&nbsp;') }}</a> et le <a style="color: #000000; text-decoration: none;">{{ validEnd | replace(' ', '&nbsp;') }}</a> et obtenez {{ bonusPoints | replace(' ', '&nbsp;') if count!=8 else "750" }}&nbsp;<span style="white-space: nowrap;">Petro&zwj;-&zwj;Points</span> en prime quand vous faites {{ "un" if count==1 or count==8 else count}}&nbsp;achat{{ "s" if count!=1 and count!=8 }} d&rsquo;essence. S'applique &agrave; toutes les qualit&eacute;s d'essence. Achat minimum de 25&nbsp;L requis. Les points en prime seront accord&eacute;s dans les 2&nbsp;semaines suivant la fin de l'offre. Limite de {{ bonusPoints | replace(' ', '&nbsp;') if count!=8 else "750" }}&nbsp;points en prime par&nbsp;foyer.
+<br /><br />
+{% else -%}
+<sup class="sup">1</sup> You must click the button to activate the offer. After activating this offer, please wait up to 24 hours before making your {{ " first" if count!=1 and count!=8 }} purchase. Swipe your <span style="white-space: nowrap;">Petro&zwj;-&zwj;Points</span> card or pay using your linked RBC debit or credit card between <a style="color: #000000; text-decoration: none;">{{ validStart | replace(' ', '&nbsp;') }}</a> and <a style="color: #000000; text-decoration: none;">{{ validEnd | replace(' ', '&nbsp;') }}</a> and get {{ bonusPoints if count!=8 else "750" }}&nbsp;bonus points when you make {{ "1&nbsp;fuel purchase" if count==1 or count==8 else count+"&nbsp;fuel purchases" }}. Applies to all fuel grades. Minimum 25L{{ "" if count==1 or count==8 else " per" }} purchase required. Bonus points will be applied within 2&nbsp;weeks of offer end date. Offer limited to a maximum of {{ bonusPoints if count!=8 else "750" }}&nbsp;bonus points per household.
+<br /><br />
+{% endif -%}
+</sg:conditional>
+{% endmacro -%}
+
+{% macro m_legal(prefix, item) -%}
+{% if item.legalCopy -%}
+{% if item.logic.length > 0 -%}
+
+<sg:conditional expression="all({% for logic in item.logic %}{{ logic.operator }}([eventValue('{{ logic.field }}')], '{{ logic.value }}'){% if not loop.last %},{% endif %}{% endfor %})">
+
+{% endif -%}
+{{ item.legalCopy | nl2br }}
+<br /><br />
+{% if item.logic.length > 0 -%}
+</sg:conditional>
+{% endif -%}
+{% endif -%}
+{% endmacro -%}
+
+{% macro m_copy(section, lang) %}
+{% if section.layout == 'bottomRight' %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+  <td align="left" class="" style="font-family: arial; font-size: 16px; line-height: 22px; color: #000000; padding:0px 20px 20px 20px;">
+    {{ section.copy | nl2br }}
+  </td>
+  </tr>
+  <!-- Everywhere else -->
+  <!--[if !mso]-->
+  <!-- MOBILE -->
+  <tr>
+  <td align="center" style="font-family: arial; font-size: 16px; line-height: 20px; padding:0px 20px 0px 20px; display: none;" class="showm">
+     <img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" style="display: block; font-size: 30px; font-family: arial; font-weight: bold; line-height: 32px;" alt="{{ section.altText }}" class="expandm">
+  </td>
+  </tr>
+  <tr>
+  <td align="" style="font-family: arial; font-size: 16px; line-height: 22px;display: none; padding:20px 20px 0px 20px;" class="showm">
+    {{ section.extraCopy | nl2br }}
+  </td>
+  </tr>
+  <!--<![endif]-->
+  <!-- DESKTOP -->
+  <tr>
+  <td align="left" class="" style="font-family: arial; font-size: 16px; line-height: 20px; color: #000000; padding:0px 20px 20px 20px;">
+    <table border="0" align="left" cellpadding="0" cellspacing="0" style="" class="expandm2" role="presentation">
+      <tr>
+        <td align="" style="font-family: arial; font-size: 16px; line-height: 22px; display: block;" class="hide">
+          {{ section.extraCopy | nl2br }}
+        </td>
+        <td align="center" style="font-family: arial; font-size: 16px; line-height: 20px;padding-left: 20px;">
+          <img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" style="display: block; font-size: 30px; font-family: arial; font-weight: bold; line-height: 32px;" alt="{{ section.altText }}" class="hide">
+        </td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+</table>
+{% elif section.layout == 'topRight' %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+<!--[if !mso]-->
+<!-- MOBILE -->
+<tr>
+<td align="" style="font-family: arial; font-size: 16px; line-height: 22px;display: none; padding:0px 20px 0px 20px;" class="showm">
+{{ section.copy | nl2br }}
+</td>
+</tr>
+<tr>
+<td align="center" style="font-family: arial; font-size: 16px; line-height: 20px; padding:20px 20px 0px 20px; display: none;" class="showm">
+<img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" style="display: block; font-size: 30px; font-family: arial; font-weight: bold; line-height: 32px;" alt="{{ section.altText }}" class="expandm">
+</td>
+</tr>
+<!--<![endif]-->
+<!-- DESKTOP -->
+<tr>
+<td align="left" class="" style="font-family: arial; font-size: 16px; line-height: 20px; color: #000000; padding:0px 20px 20px 20px;">
+<table border="0" align="left" cellpadding="0" cellspacing="0" style="" class="expandm2" role="presentation">
+  <tr>
+    <td align="" style="font-family: arial; font-size: 16px; line-height: 22px; display: block;" class="hide">
+      {{ section.copy | nl2br }}
+    </td>
+    <td align="center" style="font-family: arial; font-size: 16px; line-height: 20px;padding-left: 20px;">
+      <img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" style="display: block; font-size: 30px; font-family: arial; font-weight: bold; line-height: 32px;" alt="{{ section.altText }}" class="hide">
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" class="" style="font-family: arial; font-size: 16px; line-height: 22px; color: #000000; padding:0px 20px 20px 20px;">
+{{ section.extraCopy | nl2br }}
+</td>
+</tr>
+</table>
+{% elif section.layout == 'ExclusiveOffer' %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0" border="0" width="560" class="w100m" align="center" style="width:560px;background-color: #ffffff;" role="presentation">
+<tr>
+  <td align="center" style="padding: 20px;">
+    <!--body-->
+     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+       <tr>
+         <td align="" style="border: 2px solid #c4c4c4;">
+           <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ffffff" role="presentation">
+              <tr>
+                <td style="font-family: arial; font-size: 22px; line-height: 26px;color: #ffffff; padding: 10px;" align="left" bgcolor="#000000">
+                  Email Exclusive Offer
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+                    <tr>
+                      <td style="padding: 0px 20px 0px 20px;" class="expandm2" align="center" valign="top" bgcolor="#ffffff">
+                        <!-- SPACER -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+                          <tr>
+                            <td align="" style="padding-top:10px;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- SPACER END -->
+                        <!--Image-->
+                        <img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" bgcolor="#ffffff" border="0" style="width:140px;display:block; text-align: center; font-family: arial; font-size: 18px;" alt="{{ section.altText }}" width="140">
+                      </td>
+                      <td style="padding: 0px 20px 20px 20px;" class="expandm2" align="center">
+                        <!-- SPACER -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+                          <tr>
+                            <td align="" style="padding-top:20px;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- SPACER END -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+                          <tr>
+                            <td style="font-family: arial; font-size: 16px; line-height: 22px;color: #000000;" bgcolor="#ffffff">
+                              <span style="font-weight: bold; font-family: arial; font-size: 19px; line-height: 23px; color: #000000;">{{ section.title }}</span><br /><br />
+                              {{ section.extraCopy | nl2br }}
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" style="padding:30px 0 5px 0;">
+                              <table align="left" width="" bgcolor="#ffffff"cellpadding="0" cellspacing="0" border="0" class="w100m" role="presentation">
+                                <tr>
+                                  <td align="center" valign="top" style="">
+                                    <table align="center" width="" bgcolor="#ffffff"cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                      <tr>
+                                        <td style="" class=""  bgcolor="#ffffff">
+                                          <a href="{{ section.button.link }}" target="_blank" linkname="{{ section.button.name | upper }}">
+                                            <img src="./images/btn_{{ section.button.name | replace(' ','') }}.png" width="190" border="0" style="display:block; font-size: 16px; font-weight: bold; font-family: arial; color: #ffffff; background-color: #EB0000; text-transform: uppercase; width: 190px;" alt="{{ section.button.altText | upper }}">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+         </td>
+       </tr>
+     </table>
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+{% elif section.layout == 'superPass' %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+<tr>
+<td style="padding: 15px 0px;" class="padl20m padr20m">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td class="titleWidth" align="left" width="220" style="width:220px;font-family: arial; color: #eb0000; font-weight: bold; font-size: 20px;">
+{{ section.title }}
+</td>
+<td>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td height="1" style="line-height: 1px;" bgcolor="#c4c4c4" width="100%">
+  <!--top-->
+  <img src="http://images.info-petrocanada.ca/Ref-924341/images/spacer.gif" style="width:1px;display: block;" height="1" width="1" border="0">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding-bottom: 20px;">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<!-- left_image -->
+<th valign="top" align="center" style="font-weight: normal; padding: 0px 0px 0px 0px; margin: 0px; width:325;" class="block padl20 pard20">
+<img src="./images/{{ section.offers.image }}" style="display: block; font-family: arial; font-size: 16px;" alt="{{ section.offers.altText }}" border="0" width="320" class="imageScale2 resizem" />
+</th>
+<!-- /left_image -->
+<!-- right_copy -->
+<th valign="top" align="center" style="font-weight: normal; vertical-align: top; vertical-align: 0px; padding: 0px; margin: 0px;" class="expandm2">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+<tr>
+<td class="padt10m" valign="top" align="left" style="padding: 0px 15px 5px 15px; font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:23px; color: #000000; font-weight: bold;" class="mobile_padding_new">{{ section.copy | nl2br }}
+</td>
+</tr>
+<tr>
+<td valign="top" align="left" style="padding: 0px 15px 0px 15px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; line-height: 16px;" class="hide">
+  &nbsp;
+</td>
+</tr>
+<tr>
+<td valign="top" align="left" class="mobile_padding_new" style="padding: 0px 15px 0px 15px;">
+  <table cellspacing="0" cellpadding="0" border="0" width="190" class="w100m" style="width:190px;" role="presentation">
+    <tr>
+      <td style="padding-bottom: 20px;" align="center" class="padt10m">
+        {{ m_button(lang, section.button.name, section.button.altText) }}
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+</table>
+</th>
+<!-- right_copy -->
+</tr>
+</table>
+</td>
+</tr>
+</table>
+{% elif section.layout == 'RBC' %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+<tr>
+<td style="font-family: arial; font-size: 19px; color: #0061aa; font-weight: bold; padding: 22px 20px 0px 20px; line-height: 23px; ">
+{{ section.title | nl2br }}
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 20px 20px 20px;" class="expandm pad0" align="center">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="center" class="expandm2 padt20m">
+<img src="./images/{{ section.offers.left.image }}" style="display: block; font-family: arial; font-size: 16px;" alt="{{ section.offers.left.altText }}" border="0" />
+</td>
+<td align="center" style="padding-left:10px;" class="padl0m expandm2 padt20m padb20m">
+<img src="./images/{{ section.offers.right.image }}" style="display: block; font-family: arial; font-size: 16px;" alt="{{ section.offers.right.altText }}" border="0" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-family: arial; font-size: 16px; line-height: 22px; padding: 0px 20px;">
+{{ section.copy | nl2br }}
+</td>
+</tr>
+<tr>
+<td style="padding: 0px 20px 0px 20px;" class="expandm pad0" align="center">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td align="left" class="expandm2" style="padding-top: 20px; font-family: arial; font-size: 16px; line-height: 22px;">
+{{ section.bulletCopy | nl2br }}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+    <td align="center" style="padding-top:6px;">
+    {% for bullet in section.bullets %}
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="" role="presentation">
+        <tr>
+          <td style="color: #000000; font-family: arial; font-size: 16px; font-weight: normal; padding-top: 5px; line-height: 16px;" valign="top">
+            &bull;
+          </td>
+          <td style="color: #000000; font-family: arial; font-size: 16px; font-weight: normal; padding-top: 5px; line-height: 16px; padding-left: 5px;">
+            {{ bullet }}
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+    </td>
+  </tr>
+</table>
+</td>
+<td align="center" class="expandm2 padt20m">
+<img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" style="display: block; font-size: 16px; font-family: arial; line-height: 32px;" alt="{{ section.altText }}" class="">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" style="color:#0061aa; padding: 20px 20px 0px 20px; font-family: arial; font-size: 16px; line-height: 20px;">
+<strong>Enjoy these card benefits:</strong>
+</td>
+</tr>
+<tr>
+<td align="left" style="color:#000000; padding: 20px 20px 0px 20px; font-family: arial; font-size: 16px; line-height: 20px;">
+{% for benefit in section.cardBenefits %}
+  <span style="color: #0061aa; font-size: 22px; font-weight: bold; border-right: 2px solid #c4c4c4;">$1<span style="color: #000000; font-size: 22px; font-weight: bold;">:</span>1&nbsp;</span>&nbsp;&nbsp;{{ benefit }}
+  <br/><br/>
+{% endfor %}
+{% if section.extraCopy %}
+{{ section.extraCopy | nl2br }}
+{% endif %}
+</td>
+</tr>
+<tr>
+<td class="padt20m" style="padding: 30px 0px 30px 0px; background-color: #ffffff;" bgcolor="#ffffff">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+  <tr>
+    <td height="1" style="line-height: 1px;" bgcolor="#c4c4c4" width="100%" class="hide">
+      <!--top-->
+      <img src="https://images.info-petrocanada.ca/Brand/spacer.gif" style="width:1px;display: block;" height="1" width="1" />
+    </td>
+  </tr>
+</table>
+</td>
+<td align="center" width="210" style="width:210px;background-color: #ffffff;">
+<a href="{{ section.button.link }}" target="_blank" linkname="{{ section.button.name | upper }}">
+  <img src="./images/btn_{{ section.button.name | replace(' ','') }}" style="width: 190px;display: block; color:#013a71; font-family: arial; padding: 0px 15px; mso-padding-alt: 0px 15px;" width="190" alt="{{ section.button.altText | upper }}"/>
+</a>
+</td>
+<td>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+  <tr>
+    <td height="1" style="line-height: 1px;" bgcolor="#c4c4c4" width="100%" class="hide">
+      <!--top-->
+      <img src="https://images.info-petrocanada.ca/Brand/spacer.gif" style="width:1px;display: block;" height="1" width="1" />
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" style="color:#000000; padding: 10px 20px 10px 20px; font-family: arial; font-size: 16px; line-height: 22px;">
+Annual Fee: <em>$120</em> | Additional&nbsp;Card: <em>$50</em> | Purchase&nbsp;Rate: <em>19.99%</em> | Cash&nbsp;Advance&nbsp;Rate:&nbsp;<em>22.99%</em>
+<br class=""/><br class=""/>
+<em>This card requires a minimum personal income of $60,000 or a minimum household income of $100,000. This credit card may impose higher acceptance costs on&nbsp;merchants</em>.
+<br class=""/><br class=""/>
+</td>
+</tr>
+</table>
+{% else %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation">
+  <tr>
+    <td align="left" class="" style="font-family: arial; font-size: 16px; line-height: 22px; color: #000000; padding:0px 20px 20px 20px;">
+      {{ section.copy | nl2br }}
+    </td>
+  </tr>
+  {% if section.imageName %}
+  <tr>
+    <td align="center" style="font-family: arial; font-size: 16px; line-height: 20px; padding:0px 20px 0px 20px; display: block;" class="">
+      <img src="./images/{{ section.imageName | replace(' ','') }}_{{ lang }}.png" style="display: block; font-size: 30px; font-family: arial; font-weight: bold; line-height: 32px;" alt="{{ section.altText }}" class="expandm">
+    </td>
+  </tr>
+  {% endif %}
+  {% if section.extraCopy %}
+  <tr>
+    <td align="" style="font-family: arial; font-size: 16px; line-height: 22px;display: block; padding:20px 20px 20px 20px;" class="">
+      {{ section.extraCopy | nl2br }}
+    </td>
+  </tr>
+  {% endif %}
+</table>
+{% endif %}
+{% endmacro %}

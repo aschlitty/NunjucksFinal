@@ -1,0 +1,116 @@
+console.log("mocker script loaded");
+const INTERVAL_TIME = 8000;
+
+let classList = ["hm-text", "hm-img", "hm-list"];
+
+function generateRandomString(constraints) {
+  // Generate random string of given length from a
+  // set of predefined charachters
+  let min = Math.ceil(Number(constraints["size"].split("__")[0]));
+  let max = Math.floor(Number(constraints["size"].split("__")[1]));
+
+  // random number between range Max and Min inclusive
+  let length = Math.floor(Math.random() * (max + 1 - min)) + min;
+
+  let wordString = `Here from the king's mountain view. Here from a wild dream come true. Feast like a sultan I do. On treasures and flesh, never few. But I, I would, wish it all away; if I thought I'd lose you just one day. The devil and his had me down. In love with the dark side. I'd found Dabblin' all the way down - up to my neck soon to drown. But you changed that all for me; lifted me up, turned me round. So I, I would, wish this all away. Prayed like a martyr dusk to dawn. Begged like a hooker all night long. Tempted the devil with my song, and got what I wanted all along. But I would, if I could, and I would wish it away! Wish it all away! Wanna wish it all away! No prize that could hold sway or justify my giving away my center. So if I could I'd wish it all away If I thought tomorrow would take you away. You're my peace of mind, my home, my center I'm just trying to hold on one more day. Damn my eyes! Damn my eyes! If they should compromise our fulcrum - wants and needs divide me then I might as well be gone. Shine on forever shine on benevolent sun. Shine on upon the broken shine until the two become one. Shine on forever shine on benevolent sun. Shine on upon the severed shine until the two become one. Divided I'm withering away, divided I'm withering away! Shine on upon the many, light our way benevolent sun. Breathe in union, breathe in union, breathe in union, so as one survive another day and season - "Silence, legion, save your poison Silence, legion, stay out of my way!"`
+
+  let randomStartCharacter = Math.floor(Math.random() * (wordString.length - length))
+
+  let result = wordString.substring(randomStartCharacter, randomStartCharacter + length)
+
+  return result;
+}
+
+function getRandomImage(constraints) {
+  // use lorem picsum api to get random images respecting given constarints
+  let minWidth = Math.ceil(
+    Number(constraints["size"].split("__")[0].split("x")[0])
+  );
+  let minHeight = Math.ceil(
+    Number(constraints["size"].split("__")[0].split("x")[1])
+  );
+  let maxWidth = Math.ceil(
+    Number(constraints["size"].split("__")[1].split("x")[0])
+  );
+  let maxHeight = Math.ceil(
+    Number(constraints["size"].split("__")[1].split("x")[1])
+  );
+  let randomWidth =
+    Math.floor(Math.random() * (maxWidth + 1 - minWidth)) + minWidth;
+  let randomHeight =
+    Math.floor(Math.random() * (maxHeight + 1 - minHeight)) + minHeight;
+  return "https://picsum.photos/" + randomWidth + "/" + randomHeight;
+}
+
+function getConstraints(className, kind) {
+  return className
+    .split(" ")
+    .filter((x) => x.startsWith("hm-") && x != kind)
+    .reduce((acc, c) => {
+      acc[c.split("-")[1]] = c.split("-")[2];
+      return acc;
+    }, {});
+}
+
+function generateRandomList(min, max, list, childType, childClassName, childInnerHTML) {
+
+  // get a random number of childs respecting the  given constraints
+  let length = Math.floor(Math.random() * (max + 1 - min)) + min;
+
+  //clear all childrens
+  list.innerText = "";
+
+  // append  childs to the parent list
+  for (let i = 0; i < length; i++) {
+    child  = document.createElement(childType);
+    child.className = childClassName;
+    child.innerHTML = childInnerHTML;
+    list.appendChild(child);
+  }
+}
+
+classList.forEach(async function (kind) {
+  document.querySelectorAll("." + kind).forEach(async function (el) {
+    let constraints = getConstraints(el.className, kind);
+
+    // Generate a random text / image source / list that respects the constraints but explores the
+    // boundary conditions
+    switch (kind) {
+      case "hm-text":
+        // Generate random text
+        setInterval(function () {
+          el.innerText = generateRandomString(constraints);
+        }, INTERVAL_TIME);
+        break;
+
+      case "hm-img":
+        // replace image with random images respecting the constraints
+        setInterval(function () {
+          el.src = getRandomImage(constraints);
+        }, INTERVAL_TIME);
+        break;
+
+      case "hm-list":
+        // get size constraints of the list
+        let min = Math.ceil(Number(constraints["size"].split("__")[0]));
+        let max = Math.floor(Number(constraints["size"].split("__")[1]));
+
+        // const { list, listClone } = await clonenode(".hm-list");
+        const list = document.querySelector(".hm-list");
+        const listClone = list.cloneNode(true);
+        const childInnerHTML = listClone.children[0].innerHTML;
+        const childType = listClone.children[0].nodeName.toLowerCase();
+        const childClassName  = listClone.children[0].className;
+
+        //generate random list
+        setInterval(() => {
+          generateRandomList(min, max, list, childType, childClassName, childInnerHTML);
+        }, INTERVAL_TIME);
+
+        break;
+
+      default:
+        console.log("Unknown HTML Mocker kind: " + kind);
+    }
+  });
+});

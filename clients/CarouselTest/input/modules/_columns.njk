@@ -1,0 +1,60 @@
+{# These are in their own file so they can be referenced dynamically by json data #}
+{%- import "./_singleColumnModules.njk" as _singleColumnModules with context -%}
+{%- import "./_doubleColumnModules.njk" as _doubleColumnModules with context -%}
+{%- import "./_tripleColumnModules.njk" as _tripleColumnModules with context -%}
+
+{%- set width = spacing.width - (spacing.gutters * 2) %}
+
+{% macro Single(module, index) %}
+{% if module.flair %}
+  {% if 'fullWidth' in module.flair -%}
+    {% set width = spacing.width %}
+  {% endif %}
+{% endif %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="{{ ((width / spacing.width) * 100) | round }}%" style="" role="presentation">
+  <tr>
+    <td align="" style="">
+      {%- if _singleColumnModules[module.moduleID] -%}
+        {{- _singleColumnModules[module.moduleID](module, index) -}}
+      {%- endif -%}      
+    </td>
+  </tr>
+</table>
+{% endmacro %}
+
+{% macro Double(module, index) %}
+{% if module.flair %}
+  {% if 'fullWidth' in module.flair -%}
+    {% set width = spacing.width %}
+  {% endif %}
+{% endif %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="{{ ((width / spacing.width) * 100) | round }}%" style="" role="presentation">
+  <tr>
+    <td align="" style="">
+      {%- if _doubleColumnModules[module.moduleID] -%}
+        {{- _doubleColumnModules[module.moduleID](module, index) -}}
+      {%- endif -%}
+    </td>
+  </tr>
+</table>
+{% endmacro %}
+
+{% macro Triple(module, index) %}
+{% if module.flair %}
+  {% if 'fullWidth' in module.flair -%}
+    {% set width = spacing.width %}
+  {% endif %}
+{% endif %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="{{ ((width / spacing.width) * 100) | round }}%" style="" role="presentation">
+  <tr>
+    <td align="" style="">
+      {%- if _tripleColumnModules[module.moduleID] -%}
+        {{- _tripleColumnModules[module.moduleID](module, index) -}}
+      {%- endif -%}
+    </td>
+  </tr>
+</table>
+{% endmacro %}

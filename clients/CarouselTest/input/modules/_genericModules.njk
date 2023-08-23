@@ -1,0 +1,25 @@
+{%- macro OutlookRoundedTop(radius, color) -%}
+  {%- if experimentalSupport == true -%}
+<!-- MSO Rounded Top -->
+<!--[if mso]>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation"><tr><td align="left" width="{{ radius }}"><v:shape stroke="false" fill="true" style="width:{{ radius }};height:{{ radius }};position: absolute; margin-left:-1px; margin-top:-1px;" fillcolor="{{ color }}" coordsize="100, 100" coordorigin="0, 0" path = "L 0, 0, 0, 99 AT 0, 0, 200, 200, 100, 0, 0, 100 L 99, 0, 0, 0"></v:shape></td><td width="100%"> </td><td align="right" width="{{ radius }}"><v:shape stroke="false" fill="true" style="width:{{ radius }};height:{{ radius }};position: absolute; margin-left:-{{ radius - 1 }}px; margin-top:-1px; flip: x;" fillcolor="{{ color }}" coordsize="100, 100" coordorigin="0, 0" path = "L 0, 0, 0, 99 AT 0, 0, 200, 200, 100, 0, 0, 100 L 99, 0, 0, 0"> </v:shape></td></tr></table>
+<![endif]-->
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro OutlookRoundedBottom(radius, color) -%}
+  {%- if experimentalSupport == true -%}
+<!-- MSO Rounded Bottom -->
+<!--[if mso]>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="" role="presentation"><tr><td align="left" width="{{ radius }}"><v:shape stroke="false" fill="true" style="width:{{ radius }};height:{{ radius }};position: absolute; margin-left:-1px; margin-top:-{{ radius - 1 }}px; flip: y;" fillcolor="{{ color }}" coordsize="100, 100" coordorigin="0, 0" path = "L 0, 0, 0, 99 AT 0, 0, 200, 200, 100, 0, 0, 100 L 99, 0, 0, 0"></v:shape></td><td width="100%"> </td><td align="right" width="{{ radius }}"><v:shape stroke="false" fill="true" style="width:{{ radius }};height:{{ radius }};position: absolute; margin-left:-{{ radius - 1 }}px; margin-top:-{{ radius - 1 }}px; flip: x; flip: y;" fillcolor="{{ color }}" coordsize="100, 100" coordorigin="0, 0" path = "L 0, 0, 0, 99 AT 0, 0, 200, 200, 100, 0, 0, 100 L 99, 0, 0, 0"> </v:shape></td></tr></table>
+<![endif]-->
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro RoundedTopCSS(radius) -%}
+  -webkit-border-top-left-radius: {{ radius }}px; -webkit-border-top-right-radius: {{ radius }}px; -moz-border-radius-topleft: {{ radius }}px; -moz-border-radius-topright: {{ radius }}px; border-top-left-radius: {{ radius }}px; border-top-right-radius: {{ radius }}px; overflow: hidden;mso-border-alt:none;
+{%- endmacro -%}
+
+{%- macro RoundedBottomCSS(radius) -%}
+  -webkit-border-bottom-right-radius: {{ radius }}px; -webkit-border-bottom-left-radius: {{ radius }}px; -moz-border-radius-bottomright: {{ radius }}px; -moz-border-radius-bottomleft: {{ radius }}px; border-bottom-right-radius: {{ radius }}px; border-bottom-left-radius: {{ radius }}px; overflow: hidden;mso-border-alt:none;
+{%- endmacro -%}
