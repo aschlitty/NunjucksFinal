@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JSONEditor | Cutom Form</title>
+    <link href="./node_modules/jsoneditor/dist/jsoneditor.css" rel="stylesheet" type="text/css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./node_modules/jsoneditor/dist/jsoneditor.js"></script>
+    <script src="https://bgrins.github.io/filereader.js/filereader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+    <link href="./css/darktheme.css" rel="stylesheet" type="text/css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+    html, body {
+    font: 13pt sans-serif;
+    }
+    body {
+      margin: 20px 30px;
+    }
+    #jsoneditor {
+    width: 75vw;
+    height: 60vh;
+    }
+    #container__fileUpload, #container__clientSelect {
+      width: 100%;
+      max-width: 340px;
+    }
+    .center {
+      margin: auto;
+      width: 75vw;
+    }
+    p, h1 {
+      width: 75vw;
+      text-align: center;
+    }
+    /*tooltip styles*/
+    .visuallyhidden{position:absolute;clip:rect(1px,1px,1px,1px)}
+    .button-tooltip-container {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        min-height: 30px;
+
+    }
+    #tooltip {
+        display: none;
+        margin-left: 100px;
+        margin-top: -34px;
+        padding: 5px 12px;
+        background-color: #000000df;
+        border-radius: 4px;
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="text">
+        <h1>JSON Builder</h1>
+          <div id="container__clientSelect" class="center">
+            <div class="form-group">
+              <label for="sel1">First choose a client to load the options:</label>
+              <select class="form-control" id="clientSelect"></select>
+            </div>
+          </div>
+          <div class="center" style="width: auto; text-align: center;">
+            <button type="button" class="btn btn-primary" id="loadClientOptions">Load client options</button>
+          </div>
+          <div class="center" style="width: auto; text-align: center;">
+            <div id="tooltip">Client options loaded!</div>
+          </div>
+
+        <p style="margin-top: 20px;">
+          Next load a file if you have one:
+        </p>
+        <div id="container__fileUpload" class="center">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="loadDocument">
+              <label class="custom-file-label" for="loadDocument">Choose file</label>
+            </div>
+          </div>
+        </div>
+        <p>
+          <button type="button" class="btn btn-secondary" id="saveDocument" value="Save">Save JSON</button>
+        </p>
+      </div>
+      <div id="jsoneditor"></div>
+      <div id="onValidationOutput"></div>
+    </div>
+    <script src="clients/clientOptions.cjs"></script>
+    <script src="./JSON-GUI.js"></script>
+  </body>
+</html>
